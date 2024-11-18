@@ -1,0 +1,30 @@
+
+### Create User
+POST http://localhost:3002/users
+Authorization: Bearer d1bec3f42ad74ea2b5e66a0577fe3cca
+Content-Type: application/json
+
+{
+    "name": "Catalyst"
+}
+
+### Get Users
+GET http://localhost:3002/users
+Content-Type: application/json
+Authorization: Bearer d1bec3f42ad74ea2b5e66a0577fe3cca
+
+### Get one User
+GET http://localhost:3002/users/d1bec3f42ad74ea2b5e66a0577fe3cca
+Content-Type: application/json
+
+### Update User
+PUT http://localhost:3002/users/d1bec3f42ad74ea2b5e66a0577fe3cca
+Content-Type: application/json
+
+{
+    "name": "Admin"
+}
+
+### Remove User
+DELETE http://localhost:3002/users/d1bec3f42ad74ea2b5e66a0577fe3cca
+Content-Type: application/json

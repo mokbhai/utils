@@ -1,0 +1,5956 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "bhosdik": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bsdk": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "kutt": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "harmkhor": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "chutiya": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gandu": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "madarchod": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "behenchod": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "sala": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "randi": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bkl": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "lund": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "madharchod": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bhadwa": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "ki,maa,teri": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "behen,ki,teri": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "kamina": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "harami": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "ke,path,ullu": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gadha": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "hijra": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "ke,laud,maa": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bhosada": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "chut": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "chutiy": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "chutmarika": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "chut,dhakkan,ke": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "lauda": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "ka,laud": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bhadw": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bacha,ka,randi": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "chut,ke,pasin": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,marwan": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "faad,gand": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "danda,gand,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,goli,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,le,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,ghusa,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,me,ung": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "aag,gand,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,jalan,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,khujli,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,me,supari": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bomb,gand,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,me,patakha": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,me,rocket": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,me,missil": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "firecrack,gand,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "dynamit,gand,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "explos,gand,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "blast,gand,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "erupt,gand,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,me,volcano": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "earthquak,gand,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,me,tsunami": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,hurrican,me": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gand,me,tornado": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bastard": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "dickhead": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "asshol": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "fuck": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "shit": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bitch": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "cunt": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "prick": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "wanker": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "twat": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "slut": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "douchebag": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "pussi": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "cock": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "fucker": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "motherfuck": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "a,bitch,of,son": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "whore": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "skank": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "scumbag": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "pig": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "dog": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "rat": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "snake": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "coward": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "idiot": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "moron": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "dumbass": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "retard": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "loser": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "freak": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "weirdo": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "creep": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "pervert": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "jerk": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bulli": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "nerd": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "geek": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "dork": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "lame": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "pathet": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "weakl": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "sissi": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "pansi": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "wimp": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "crybabi": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "brat,spoil": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "brat": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bimbo": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "airhead": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "ditz": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "blond,dumb": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "digger,gold": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "attent,seeker": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "drama,queen": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "hypocrit": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "liar": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "cheater": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "backstabb": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "traitor": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "snitch": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "tattletal": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gossip": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "blabbermouth": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "loudmouth": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "bigmouth": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "know-it-al": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "smartass": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "wiseass": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "show-off": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "braggart": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "boaster": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "egoist": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "narcissist": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "self-cent": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "selfish": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "greedi": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "glutton": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "piggi": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "hog": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "slob": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "messi": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "dirti": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "filthi": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "stinki": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "smelli": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "gross": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "disgust": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "nasti": {
+            "intent": "vulgarWords",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "holla": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "howdi": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "good,morn": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "afternoon,good": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "even,good": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "greet": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "is,up,what": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "yo": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "hiya": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "go,how,is,it": {
+            "intent": "wellBeing",
+            "domain": "default"
+          },
+          "are,how,you": {
+            "intent": "wellBeing",
+            "domain": "default"
+          },
+          "sup": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "hey,there": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "hi,there": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "hello,there": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "day,good": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "salut": {
+            "intent": "greetings",
+            "domain": "default"
+          },
+          "are,how,thing": {
+            "intent": "wellBeing",
+            "domain": "default"
+          },
+          "do,how,you": {
+            "intent": "wellBeing",
+            "domain": "default"
+          },
+          "can,have,i,registr,techsprint,the": {
+            "intent": "request_file",
+            "domain": "default"
+          },
+          "i,need,registr,the": {
+            "intent": "request_file",
+            "domain": "default"
+          },
+          "for,registr,techsprint": {
+            "intent": "request_file",
+            "domain": "default"
+          },
+          "latest,registr": {
+            "intent": "request_file",
+            "domain": "default"
+          },
+          "techsprint": {
+            "intent": "request_file",
+            "domain": "default"
+          },
+          "could,data,get,latest,me,sheet,the,you": {
+            "intent": "request_file",
+            "domain": "default"
+          },
+          "sprint,tech": {
+            "intent": "request_file",
+            "domain": "default"
+          },
+          "registr,sprint": {
+            "intent": "request_file",
+            "domain": "default"
+          },
+          "excel,file,for,techsprint": {
+            "intent": "request_file",
+            "domain": "default"
+          },
+          "are,who,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "is,name,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "address,email,me,tell,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "are,hobbi,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "are,interest,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "me,number,phone,tell,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "full,is,name,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "can,contact,how,i,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "do,what,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "do,studi,where,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "is,occup,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "is,role,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "can,contact,detail,share,you,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "attend,do,univers,what,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "activ,are,favorit,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "do,enjoy,what,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "is,job,titl,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "do,where,work,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "background,is,profession,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "background,educ,is,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "address,is,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "do,live,where,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "can,linkedin,profil,share,you,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "github,is,usernam,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "about,me,tell,yourself": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "do,have,skill,what,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "do,languag,speak,what,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "have,on,project,what,work,you": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "about,can,me,project,tell,you,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "bio,is,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "is,number,registr,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "no,registr": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "no,reg": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "is,lpu,number,registr,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "is,no,registr,what,your": {
+            "intent": "my_info",
+            "domain": "default"
+          },
+          "describ,experi,profession,your": {
+            "intent": "my_info",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "vulgarWords": "default",
+          "greetings": "default",
+          "wellBeing": "default",
+          "request_file": "default",
+          "my_info": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Bhosdike",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "bsdk",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Kutte",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Harmkhor",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Chutiya",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gandu",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Madarchod",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Behenchod",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Sala",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Randi",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bkl",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Lund",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Madharchod",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bhadwa",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Teri Maa Ki",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Teri Behen Ki",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Kamina",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Harami",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ullu ke pathe",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gadha",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hijra",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Maa ke laude",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bhosada",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Chut",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Chutiye",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Chutmarika",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Chut ke dhakkan",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Lauda",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Laude ka",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bhadwe",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Randi ka bacha",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Chut ke pasine",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand marwane",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand faad",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me danda",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me goli",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me le",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me ghusa",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me ungli",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me aag",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me jalan",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me khujli",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me supari",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me bomb",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me patakha",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me rocket",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me missile",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me firecracker",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me dynamite",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me explosion",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me blast",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me eruption",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me volcano",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me earthquake",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me tsunami",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me hurricane",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gand me tornado",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bhosdike",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "bsdk",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Kutte",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Harmkhor",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Chutiya",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gandu",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Madarchod",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Behenchod",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Sala",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Randi",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Lund",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bhadwa",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Teri Maa Ki",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Teri Behen Ki",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Kamina",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Harami",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bastard",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Dickhead",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Asshole",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Fuck",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Shit",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bitch",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Cunt",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Prick",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Wanker",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Twat",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Slut",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Douchebag",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Pussy",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Cock",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Fucker",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Motherfucker",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Son of a bitch",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Whore",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Skank",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Scumbag",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Pig",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Dog",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Rat",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Snake",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Coward",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Idiot",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Moron",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Dumbass",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Retard",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Loser",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Freak",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Weirdo",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Creep",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Pervert",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Jerk",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bully",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Nerd",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Geek",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Dork",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Lame",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Pathetic",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Weakling",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Sissy",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Pansy",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Wimp",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Crybaby",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Spoiled brat",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Brat",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bimbo",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Airhead",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Ditz",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Dumb blonde",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gold digger",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Attention seeker",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Drama queen",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hypocrite",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Liar",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Cheater",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Backstabber",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Traitor",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Snitch",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tattletale",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gossip",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Blabbermouth",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Loudmouth",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bigmouth",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Know-it-all",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Smartass",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Wiseass",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show-off",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Braggart",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Boaster",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Egoist",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Narcissist",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Self-centered",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Selfish",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Greedy",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Glutton",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Piggy",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hog",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Slob",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Messy",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Dirty",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Filthy",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Stinky",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Smelly",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Gross",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Disgusting",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "Nasty",
+            "intent": "vulgarWords"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "holla",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "good afternoon",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "greetings",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's up",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "yo",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hiya",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how's it going",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "sup",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey there",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi there",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello there",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "good day",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "salutations",
+            "intent": "greetings"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you",
+            "intent": "wellBeing"
+          },
+          {
+            "domain": "default",
+            "utterance": "how's it going",
+            "intent": "wellBeing"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are things",
+            "intent": "wellBeing"
+          },
+          {
+            "domain": "default",
+            "utterance": "how do you do",
+            "intent": "wellBeing"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I have the techsprint registrations?",
+            "intent": "request_file"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need the registrations",
+            "intent": "request_file"
+          },
+          {
+            "domain": "default",
+            "utterance": "registrations for techsprint",
+            "intent": "request_file"
+          },
+          {
+            "domain": "default",
+            "utterance": "latest registrations",
+            "intent": "request_file"
+          },
+          {
+            "domain": "default",
+            "utterance": "techsprint",
+            "intent": "request_file"
+          },
+          {
+            "domain": "default",
+            "utterance": "Could you get me the latest data sheet?",
+            "intent": "request_file"
+          },
+          {
+            "domain": "default",
+            "utterance": "tech sprint",
+            "intent": "request_file"
+          },
+          {
+            "domain": "default",
+            "utterance": "sprint registrations",
+            "intent": "request_file"
+          },
+          {
+            "domain": "default",
+            "utterance": "excel file for techsprint",
+            "intent": "request_file"
+          },
+          {
+            "domain": "default",
+            "utterance": "who are you?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your name?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me your email address.",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are your hobbies?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are your interests?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me your phone number",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What's your full name?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I contact you?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What do you do?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "Where do you study?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your occupation?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your role?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can you share your contact details?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What university do you attend?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are your favorite activities?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What do you enjoy doing?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your job title?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "Where do you work?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your professional background?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your educational background?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your address?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "Where do you live?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can you share your LinkedIn profile?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your GitHub username?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me about yourself.",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What skills do you have?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What languages do you speak?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What projects have you worked on?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can you tell me about your projects?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your bio?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your registration number?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "registration no.",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "reg no.",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your registration number lpu?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your registration no?",
+            "intent": "my_info"
+          },
+          {
+            "domain": "default",
+            "utterance": "Describe your professional experience.",
+            "intent": "my_info"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "bhosdik": 1,
+              "bsdk": 1,
+              "kutt": 1,
+              "harmkhor": 1,
+              "chutiya": 1,
+              "gandu": 1,
+              "madarchod": 1,
+              "behenchod": 1,
+              "sala": 1,
+              "randi": 1,
+              "bkl": 1,
+              "lund": 1,
+              "madharchod": 1,
+              "bhadwa": 1,
+              "teri": 1,
+              "maa": 1,
+              "ki": 1,
+              "behen": 1,
+              "kamina": 1,
+              "harami": 1,
+              "ullu": 1,
+              "ke": 1,
+              "path": 1,
+              "gadha": 1,
+              "hijra": 1,
+              "laud": 1,
+              "bhosada": 1,
+              "chut": 1,
+              "chutiy": 1,
+              "chutmarika": 1,
+              "dhakkan": 1,
+              "lauda": 1,
+              "ka": 1,
+              "bhadw": 1,
+              "bacha": 1,
+              "pasin": 1,
+              "gand": 1,
+              "marwan": 1,
+              "faad": 1,
+              "me": 1,
+              "danda": 1,
+              "goli": 1,
+              "le": 1,
+              "ghusa": 1,
+              "ung": 1,
+              "aag": 1,
+              "jalan": 1,
+              "khujli": 1,
+              "supari": 1,
+              "bomb": 1,
+              "patakha": 1,
+              "rocket": 1,
+              "missil": 1,
+              "firecrack": 1,
+              "dynamit": 1,
+              "explos": 1,
+              "blast": 1,
+              "erupt": 1,
+              "volcano": 1,
+              "earthquak": 1,
+              "tsunami": 1,
+              "hurrican": 1,
+              "tornado": 1,
+              "bastard": 1,
+              "dickhead": 1,
+              "asshol": 1,
+              "fuck": 1,
+              "shit": 1,
+              "bitch": 1,
+              "cunt": 1,
+              "prick": 1,
+              "wanker": 1,
+              "twat": 1,
+              "slut": 1,
+              "douchebag": 1,
+              "pussi": 1,
+              "cock": 1,
+              "fucker": 1,
+              "motherfuck": 1,
+              "son": 1,
+              "of": 1,
+              "a": 1,
+              "whore": 1,
+              "skank": 1,
+              "scumbag": 1,
+              "pig": 1,
+              "dog": 1,
+              "rat": 1,
+              "snake": 1,
+              "coward": 1,
+              "idiot": 1,
+              "moron": 1,
+              "dumbass": 1,
+              "retard": 1,
+              "loser": 1,
+              "freak": 1,
+              "weirdo": 1,
+              "creep": 1,
+              "pervert": 1,
+              "jerk": 1,
+              "bulli": 1,
+              "nerd": 1,
+              "geek": 1,
+              "dork": 1,
+              "lame": 1,
+              "pathet": 1,
+              "weakl": 1,
+              "sissi": 1,
+              "pansi": 1,
+              "wimp": 1,
+              "crybabi": 1,
+              "spoil": 1,
+              "brat": 1,
+              "bimbo": 1,
+              "airhead": 1,
+              "ditz": 1,
+              "dumb": 1,
+              "blond": 1,
+              "gold": 1,
+              "digger": 1,
+              "attent": 1,
+              "seeker": 1,
+              "drama": 1,
+              "queen": 1,
+              "hypocrit": 1,
+              "liar": 1,
+              "cheater": 1,
+              "backstabb": 1,
+              "traitor": 1,
+              "snitch": 1,
+              "tattletal": 1,
+              "gossip": 1,
+              "blabbermouth": 1,
+              "loudmouth": 1,
+              "bigmouth": 1,
+              "know-it-al": 1,
+              "smartass": 1,
+              "wiseass": 1,
+              "show-off": 1,
+              "braggart": 1,
+              "boaster": 1,
+              "egoist": 1,
+              "narcissist": 1,
+              "self-cent": 1,
+              "selfish": 1,
+              "greedi": 1,
+              "glutton": 1,
+              "piggi": 1,
+              "hog": 1,
+              "slob": 1,
+              "messi": 1,
+              "dirti": 1,
+              "filthi": 1,
+              "stinki": 1,
+              "smelli": 1,
+              "gross": 1,
+              "disgust": 1,
+              "nasti": 1,
+              "hi": 1,
+              "hey": 1,
+              "holla": 1,
+              "hello": 1,
+              "howdi": 1,
+              "good": 1,
+              "morn": 1,
+              "afternoon": 1,
+              "even": 1,
+              "greet": 1,
+              "what": 1,
+              "is": 1,
+              "up": 1,
+              "yo": 1,
+              "hiya": 1,
+              "how": 1,
+              "it": 1,
+              "go": 1,
+              "are": 1,
+              "you": 1,
+              "sup": 1,
+              "there": 1,
+              "day": 1,
+              "salut": 1,
+              "thing": 1,
+              "do": 1,
+              "can": 1,
+              "i": 1,
+              "have": 1,
+              "the": 1,
+              "techsprint": 1,
+              "registr": 1,
+              "need": 1,
+              "for": 1,
+              "latest": 1,
+              "could": 1,
+              "get": 1,
+              "data": 1,
+              "sheet": 1,
+              "tech": 1,
+              "sprint": 1,
+              "excel": 1,
+              "file": 1,
+              "who": 1,
+              "your": 1,
+              "name": 1,
+              "tell": 1,
+              "email": 1,
+              "address": 1,
+              "hobbi": 1,
+              "interest": 1,
+              "phone": 1,
+              "number": 1,
+              "full": 1,
+              "contact": 1,
+              "where": 1,
+              "studi": 1,
+              "occup": 1,
+              "role": 1,
+              "share": 1,
+              "detail": 1,
+              "univers": 1,
+              "attend": 1,
+              "favorit": 1,
+              "activ": 1,
+              "enjoy": 1,
+              "job": 1,
+              "titl": 1,
+              "work": 1,
+              "profession": 1,
+              "background": 1,
+              "educ": 1,
+              "live": 1,
+              "linkedin": 1,
+              "profil": 1,
+              "github": 1,
+              "usernam": 1,
+              "about": 1,
+              "yourself": 1,
+              "skill": 1,
+              "languag": 1,
+              "speak": 1,
+              "project": 1,
+              "on": 1,
+              "bio": 1,
+              "no": 1,
+              "reg": 1,
+              "lpu": 1,
+              "describ": 1,
+              "experi": 1
+            },
+            "intents": {
+              "vulgarWords": 1,
+              "greetings": 1,
+              "wellBeing": 1,
+              "request_file": 1,
+              "my_info": 1
+            },
+            "intentFeatures": {
+              "vulgarWords": {
+                "bhosdik": 1,
+                "bsdk": 1,
+                "kutt": 1,
+                "harmkhor": 1,
+                "chutiya": 1,
+                "gandu": 1,
+                "madarchod": 1,
+                "behenchod": 1,
+                "sala": 1,
+                "randi": 1,
+                "bkl": 1,
+                "lund": 1,
+                "madharchod": 1,
+                "bhadwa": 1,
+                "teri": 1,
+                "maa": 1,
+                "ki": 1,
+                "behen": 1,
+                "kamina": 1,
+                "harami": 1,
+                "ullu": 1,
+                "ke": 1,
+                "path": 1,
+                "gadha": 1,
+                "hijra": 1,
+                "laud": 1,
+                "bhosada": 1,
+                "chut": 1,
+                "chutiy": 1,
+                "chutmarika": 1,
+                "dhakkan": 1,
+                "lauda": 1,
+                "ka": 1,
+                "bhadw": 1,
+                "bacha": 1,
+                "pasin": 1,
+                "gand": 1,
+                "marwan": 1,
+                "faad": 1,
+                "me": 1,
+                "danda": 1,
+                "goli": 1,
+                "le": 1,
+                "ghusa": 1,
+                "ung": 1,
+                "aag": 1,
+                "jalan": 1,
+                "khujli": 1,
+                "supari": 1,
+                "bomb": 1,
+                "patakha": 1,
+                "rocket": 1,
+                "missil": 1,
+                "firecrack": 1,
+                "dynamit": 1,
+                "explos": 1,
+                "blast": 1,
+                "erupt": 1,
+                "volcano": 1,
+                "earthquak": 1,
+                "tsunami": 1,
+                "hurrican": 1,
+                "tornado": 1,
+                "bastard": 1,
+                "dickhead": 1,
+                "asshol": 1,
+                "fuck": 1,
+                "shit": 1,
+                "bitch": 1,
+                "cunt": 1,
+                "prick": 1,
+                "wanker": 1,
+                "twat": 1,
+                "slut": 1,
+                "douchebag": 1,
+                "pussi": 1,
+                "cock": 1,
+                "fucker": 1,
+                "motherfuck": 1,
+                "son": 1,
+                "of": 1,
+                "a": 1,
+                "whore": 1,
+                "skank": 1,
+                "scumbag": 1,
+                "pig": 1,
+                "dog": 1,
+                "rat": 1,
+                "snake": 1,
+                "coward": 1,
+                "idiot": 1,
+                "moron": 1,
+                "dumbass": 1,
+                "retard": 1,
+                "loser": 1,
+                "freak": 1,
+                "weirdo": 1,
+                "creep": 1,
+                "pervert": 1,
+                "jerk": 1,
+                "bulli": 1,
+                "nerd": 1,
+                "geek": 1,
+                "dork": 1,
+                "lame": 1,
+                "pathet": 1,
+                "weakl": 1,
+                "sissi": 1,
+                "pansi": 1,
+                "wimp": 1,
+                "crybabi": 1,
+                "spoil": 1,
+                "brat": 1,
+                "bimbo": 1,
+                "airhead": 1,
+                "ditz": 1,
+                "dumb": 1,
+                "blond": 1,
+                "gold": 1,
+                "digger": 1,
+                "attent": 1,
+                "seeker": 1,
+                "drama": 1,
+                "queen": 1,
+                "hypocrit": 1,
+                "liar": 1,
+                "cheater": 1,
+                "backstabb": 1,
+                "traitor": 1,
+                "snitch": 1,
+                "tattletal": 1,
+                "gossip": 1,
+                "blabbermouth": 1,
+                "loudmouth": 1,
+                "bigmouth": 1,
+                "know-it-al": 1,
+                "smartass": 1,
+                "wiseass": 1,
+                "show-off": 1,
+                "braggart": 1,
+                "boaster": 1,
+                "egoist": 1,
+                "narcissist": 1,
+                "self-cent": 1,
+                "selfish": 1,
+                "greedi": 1,
+                "glutton": 1,
+                "piggi": 1,
+                "hog": 1,
+                "slob": 1,
+                "messi": 1,
+                "dirti": 1,
+                "filthi": 1,
+                "stinki": 1,
+                "smelli": 1,
+                "gross": 1,
+                "disgust": 1,
+                "nasti": 1
+              },
+              "greetings": {
+                "hi": 1,
+                "hey": 1,
+                "holla": 1,
+                "hello": 1,
+                "howdi": 1,
+                "good": 1,
+                "morn": 1,
+                "afternoon": 1,
+                "even": 1,
+                "greet": 1,
+                "what": 1,
+                "is": 1,
+                "up": 1,
+                "yo": 1,
+                "hiya": 1,
+                "how": 1,
+                "it": 1,
+                "go": 1,
+                "are": 1,
+                "you": 1,
+                "sup": 1,
+                "there": 1,
+                "day": 1,
+                "salut": 1
+              },
+              "wellBeing": {
+                "how": 1,
+                "are": 1,
+                "you": 1,
+                "is": 1,
+                "it": 1,
+                "go": 1,
+                "thing": 1,
+                "do": 1
+              },
+              "request_file": {
+                "can": 1,
+                "i": 1,
+                "have": 1,
+                "the": 1,
+                "techsprint": 1,
+                "registr": 1,
+                "need": 1,
+                "for": 1,
+                "latest": 1,
+                "could": 1,
+                "you": 1,
+                "get": 1,
+                "me": 1,
+                "data": 1,
+                "sheet": 1,
+                "tech": 1,
+                "sprint": 1,
+                "excel": 1,
+                "file": 1
+              },
+              "my_info": {
+                "who": 1,
+                "are": 1,
+                "you": 1,
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "name": 1,
+                "tell": 1,
+                "me": 1,
+                "email": 1,
+                "address": 1,
+                "hobbi": 1,
+                "interest": 1,
+                "phone": 1,
+                "number": 1,
+                "full": 1,
+                "how": 1,
+                "can": 1,
+                "i": 1,
+                "contact": 1,
+                "do": 1,
+                "where": 1,
+                "studi": 1,
+                "occup": 1,
+                "role": 1,
+                "share": 1,
+                "detail": 1,
+                "univers": 1,
+                "attend": 1,
+                "favorit": 1,
+                "activ": 1,
+                "enjoy": 1,
+                "job": 1,
+                "titl": 1,
+                "work": 1,
+                "profession": 1,
+                "background": 1,
+                "educ": 1,
+                "live": 1,
+                "linkedin": 1,
+                "profil": 1,
+                "github": 1,
+                "usernam": 1,
+                "about": 1,
+                "yourself": 1,
+                "skill": 1,
+                "have": 1,
+                "languag": 1,
+                "speak": 1,
+                "project": 1,
+                "on": 1,
+                "bio": 1,
+                "registr": 1,
+                "no": 1,
+                "reg": 1,
+                "lpu": 1,
+                "describ": 1,
+                "experi": 1
+              }
+            },
+            "featuresToIntent": {
+              "bhosdik": [
+                "vulgarWords"
+              ],
+              "bsdk": [
+                "vulgarWords"
+              ],
+              "kutt": [
+                "vulgarWords"
+              ],
+              "harmkhor": [
+                "vulgarWords"
+              ],
+              "chutiya": [
+                "vulgarWords"
+              ],
+              "gandu": [
+                "vulgarWords"
+              ],
+              "madarchod": [
+                "vulgarWords"
+              ],
+              "behenchod": [
+                "vulgarWords"
+              ],
+              "sala": [
+                "vulgarWords"
+              ],
+              "randi": [
+                "vulgarWords"
+              ],
+              "bkl": [
+                "vulgarWords"
+              ],
+              "lund": [
+                "vulgarWords"
+              ],
+              "madharchod": [
+                "vulgarWords"
+              ],
+              "bhadwa": [
+                "vulgarWords"
+              ],
+              "teri": [
+                "vulgarWords"
+              ],
+              "maa": [
+                "vulgarWords"
+              ],
+              "ki": [
+                "vulgarWords"
+              ],
+              "behen": [
+                "vulgarWords"
+              ],
+              "kamina": [
+                "vulgarWords"
+              ],
+              "harami": [
+                "vulgarWords"
+              ],
+              "ullu": [
+                "vulgarWords"
+              ],
+              "ke": [
+                "vulgarWords"
+              ],
+              "path": [
+                "vulgarWords"
+              ],
+              "gadha": [
+                "vulgarWords"
+              ],
+              "hijra": [
+                "vulgarWords"
+              ],
+              "laud": [
+                "vulgarWords"
+              ],
+              "bhosada": [
+                "vulgarWords"
+              ],
+              "chut": [
+                "vulgarWords"
+              ],
+              "chutiy": [
+                "vulgarWords"
+              ],
+              "chutmarika": [
+                "vulgarWords"
+              ],
+              "dhakkan": [
+                "vulgarWords"
+              ],
+              "lauda": [
+                "vulgarWords"
+              ],
+              "ka": [
+                "vulgarWords"
+              ],
+              "bhadw": [
+                "vulgarWords"
+              ],
+              "bacha": [
+                "vulgarWords"
+              ],
+              "pasin": [
+                "vulgarWords"
+              ],
+              "gand": [
+                "vulgarWords"
+              ],
+              "marwan": [
+                "vulgarWords"
+              ],
+              "faad": [
+                "vulgarWords"
+              ],
+              "me": [
+                "vulgarWords",
+                "request_file",
+                "my_info"
+              ],
+              "danda": [
+                "vulgarWords"
+              ],
+              "goli": [
+                "vulgarWords"
+              ],
+              "le": [
+                "vulgarWords"
+              ],
+              "ghusa": [
+                "vulgarWords"
+              ],
+              "ung": [
+                "vulgarWords"
+              ],
+              "aag": [
+                "vulgarWords"
+              ],
+              "jalan": [
+                "vulgarWords"
+              ],
+              "khujli": [
+                "vulgarWords"
+              ],
+              "supari": [
+                "vulgarWords"
+              ],
+              "bomb": [
+                "vulgarWords"
+              ],
+              "patakha": [
+                "vulgarWords"
+              ],
+              "rocket": [
+                "vulgarWords"
+              ],
+              "missil": [
+                "vulgarWords"
+              ],
+              "firecrack": [
+                "vulgarWords"
+              ],
+              "dynamit": [
+                "vulgarWords"
+              ],
+              "explos": [
+                "vulgarWords"
+              ],
+              "blast": [
+                "vulgarWords"
+              ],
+              "erupt": [
+                "vulgarWords"
+              ],
+              "volcano": [
+                "vulgarWords"
+              ],
+              "earthquak": [
+                "vulgarWords"
+              ],
+              "tsunami": [
+                "vulgarWords"
+              ],
+              "hurrican": [
+                "vulgarWords"
+              ],
+              "tornado": [
+                "vulgarWords"
+              ],
+              "bastard": [
+                "vulgarWords"
+              ],
+              "dickhead": [
+                "vulgarWords"
+              ],
+              "asshol": [
+                "vulgarWords"
+              ],
+              "fuck": [
+                "vulgarWords"
+              ],
+              "shit": [
+                "vulgarWords"
+              ],
+              "bitch": [
+                "vulgarWords"
+              ],
+              "cunt": [
+                "vulgarWords"
+              ],
+              "prick": [
+                "vulgarWords"
+              ],
+              "wanker": [
+                "vulgarWords"
+              ],
+              "twat": [
+                "vulgarWords"
+              ],
+              "slut": [
+                "vulgarWords"
+              ],
+              "douchebag": [
+                "vulgarWords"
+              ],
+              "pussi": [
+                "vulgarWords"
+              ],
+              "cock": [
+                "vulgarWords"
+              ],
+              "fucker": [
+                "vulgarWords"
+              ],
+              "motherfuck": [
+                "vulgarWords"
+              ],
+              "son": [
+                "vulgarWords"
+              ],
+              "of": [
+                "vulgarWords"
+              ],
+              "a": [
+                "vulgarWords"
+              ],
+              "whore": [
+                "vulgarWords"
+              ],
+              "skank": [
+                "vulgarWords"
+              ],
+              "scumbag": [
+                "vulgarWords"
+              ],
+              "pig": [
+                "vulgarWords"
+              ],
+              "dog": [
+                "vulgarWords"
+              ],
+              "rat": [
+                "vulgarWords"
+              ],
+              "snake": [
+                "vulgarWords"
+              ],
+              "coward": [
+                "vulgarWords"
+              ],
+              "idiot": [
+                "vulgarWords"
+              ],
+              "moron": [
+                "vulgarWords"
+              ],
+              "dumbass": [
+                "vulgarWords"
+              ],
+              "retard": [
+                "vulgarWords"
+              ],
+              "loser": [
+                "vulgarWords"
+              ],
+              "freak": [
+                "vulgarWords"
+              ],
+              "weirdo": [
+                "vulgarWords"
+              ],
+              "creep": [
+                "vulgarWords"
+              ],
+              "pervert": [
+                "vulgarWords"
+              ],
+              "jerk": [
+                "vulgarWords"
+              ],
+              "bulli": [
+                "vulgarWords"
+              ],
+              "nerd": [
+                "vulgarWords"
+              ],
+              "geek": [
+                "vulgarWords"
+              ],
+              "dork": [
+                "vulgarWords"
+              ],
+              "lame": [
+                "vulgarWords"
+              ],
+              "pathet": [
+                "vulgarWords"
+              ],
+              "weakl": [
+                "vulgarWords"
+              ],
+              "sissi": [
+                "vulgarWords"
+              ],
+              "pansi": [
+                "vulgarWords"
+              ],
+              "wimp": [
+                "vulgarWords"
+              ],
+              "crybabi": [
+                "vulgarWords"
+              ],
+              "spoil": [
+                "vulgarWords"
+              ],
+              "brat": [
+                "vulgarWords"
+              ],
+              "bimbo": [
+                "vulgarWords"
+              ],
+              "airhead": [
+                "vulgarWords"
+              ],
+              "ditz": [
+                "vulgarWords"
+              ],
+              "dumb": [
+                "vulgarWords"
+              ],
+              "blond": [
+                "vulgarWords"
+              ],
+              "gold": [
+                "vulgarWords"
+              ],
+              "digger": [
+                "vulgarWords"
+              ],
+              "attent": [
+                "vulgarWords"
+              ],
+              "seeker": [
+                "vulgarWords"
+              ],
+              "drama": [
+                "vulgarWords"
+              ],
+              "queen": [
+                "vulgarWords"
+              ],
+              "hypocrit": [
+                "vulgarWords"
+              ],
+              "liar": [
+                "vulgarWords"
+              ],
+              "cheater": [
+                "vulgarWords"
+              ],
+              "backstabb": [
+                "vulgarWords"
+              ],
+              "traitor": [
+                "vulgarWords"
+              ],
+              "snitch": [
+                "vulgarWords"
+              ],
+              "tattletal": [
+                "vulgarWords"
+              ],
+              "gossip": [
+                "vulgarWords"
+              ],
+              "blabbermouth": [
+                "vulgarWords"
+              ],
+              "loudmouth": [
+                "vulgarWords"
+              ],
+              "bigmouth": [
+                "vulgarWords"
+              ],
+              "know-it-al": [
+                "vulgarWords"
+              ],
+              "smartass": [
+                "vulgarWords"
+              ],
+              "wiseass": [
+                "vulgarWords"
+              ],
+              "show-off": [
+                "vulgarWords"
+              ],
+              "braggart": [
+                "vulgarWords"
+              ],
+              "boaster": [
+                "vulgarWords"
+              ],
+              "egoist": [
+                "vulgarWords"
+              ],
+              "narcissist": [
+                "vulgarWords"
+              ],
+              "self-cent": [
+                "vulgarWords"
+              ],
+              "selfish": [
+                "vulgarWords"
+              ],
+              "greedi": [
+                "vulgarWords"
+              ],
+              "glutton": [
+                "vulgarWords"
+              ],
+              "piggi": [
+                "vulgarWords"
+              ],
+              "hog": [
+                "vulgarWords"
+              ],
+              "slob": [
+                "vulgarWords"
+              ],
+              "messi": [
+                "vulgarWords"
+              ],
+              "dirti": [
+                "vulgarWords"
+              ],
+              "filthi": [
+                "vulgarWords"
+              ],
+              "stinki": [
+                "vulgarWords"
+              ],
+              "smelli": [
+                "vulgarWords"
+              ],
+              "gross": [
+                "vulgarWords"
+              ],
+              "disgust": [
+                "vulgarWords"
+              ],
+              "nasti": [
+                "vulgarWords"
+              ],
+              "hi": [
+                "greetings"
+              ],
+              "hey": [
+                "greetings"
+              ],
+              "holla": [
+                "greetings"
+              ],
+              "hello": [
+                "greetings"
+              ],
+              "howdi": [
+                "greetings"
+              ],
+              "good": [
+                "greetings"
+              ],
+              "morn": [
+                "greetings"
+              ],
+              "afternoon": [
+                "greetings"
+              ],
+              "even": [
+                "greetings"
+              ],
+              "greet": [
+                "greetings"
+              ],
+              "what": [
+                "greetings",
+                "my_info"
+              ],
+              "is": [
+                "greetings",
+                "wellBeing",
+                "my_info"
+              ],
+              "up": [
+                "greetings"
+              ],
+              "yo": [
+                "greetings"
+              ],
+              "hiya": [
+                "greetings"
+              ],
+              "how": [
+                "greetings",
+                "wellBeing",
+                "my_info"
+              ],
+              "it": [
+                "greetings",
+                "wellBeing"
+              ],
+              "go": [
+                "greetings",
+                "wellBeing"
+              ],
+              "are": [
+                "greetings",
+                "wellBeing",
+                "my_info"
+              ],
+              "you": [
+                "greetings",
+                "wellBeing",
+                "request_file",
+                "my_info"
+              ],
+              "sup": [
+                "greetings"
+              ],
+              "there": [
+                "greetings"
+              ],
+              "day": [
+                "greetings"
+              ],
+              "salut": [
+                "greetings"
+              ],
+              "thing": [
+                "wellBeing"
+              ],
+              "do": [
+                "wellBeing",
+                "my_info"
+              ],
+              "can": [
+                "request_file",
+                "my_info"
+              ],
+              "i": [
+                "request_file",
+                "my_info"
+              ],
+              "have": [
+                "request_file",
+                "my_info"
+              ],
+              "the": [
+                "request_file"
+              ],
+              "techsprint": [
+                "request_file"
+              ],
+              "registr": [
+                "request_file",
+                "my_info"
+              ],
+              "need": [
+                "request_file"
+              ],
+              "for": [
+                "request_file"
+              ],
+              "latest": [
+                "request_file"
+              ],
+              "could": [
+                "request_file"
+              ],
+              "get": [
+                "request_file"
+              ],
+              "data": [
+                "request_file"
+              ],
+              "sheet": [
+                "request_file"
+              ],
+              "tech": [
+                "request_file"
+              ],
+              "sprint": [
+                "request_file"
+              ],
+              "excel": [
+                "request_file"
+              ],
+              "file": [
+                "request_file"
+              ],
+              "who": [
+                "my_info"
+              ],
+              "your": [
+                "my_info"
+              ],
+              "name": [
+                "my_info"
+              ],
+              "tell": [
+                "my_info"
+              ],
+              "email": [
+                "my_info"
+              ],
+              "address": [
+                "my_info"
+              ],
+              "hobbi": [
+                "my_info"
+              ],
+              "interest": [
+                "my_info"
+              ],
+              "phone": [
+                "my_info"
+              ],
+              "number": [
+                "my_info"
+              ],
+              "full": [
+                "my_info"
+              ],
+              "contact": [
+                "my_info"
+              ],
+              "where": [
+                "my_info"
+              ],
+              "studi": [
+                "my_info"
+              ],
+              "occup": [
+                "my_info"
+              ],
+              "role": [
+                "my_info"
+              ],
+              "share": [
+                "my_info"
+              ],
+              "detail": [
+                "my_info"
+              ],
+              "univers": [
+                "my_info"
+              ],
+              "attend": [
+                "my_info"
+              ],
+              "favorit": [
+                "my_info"
+              ],
+              "activ": [
+                "my_info"
+              ],
+              "enjoy": [
+                "my_info"
+              ],
+              "job": [
+                "my_info"
+              ],
+              "titl": [
+                "my_info"
+              ],
+              "work": [
+                "my_info"
+              ],
+              "profession": [
+                "my_info"
+              ],
+              "background": [
+                "my_info"
+              ],
+              "educ": [
+                "my_info"
+              ],
+              "live": [
+                "my_info"
+              ],
+              "linkedin": [
+                "my_info"
+              ],
+              "profil": [
+                "my_info"
+              ],
+              "github": [
+                "my_info"
+              ],
+              "usernam": [
+                "my_info"
+              ],
+              "about": [
+                "my_info"
+              ],
+              "yourself": [
+                "my_info"
+              ],
+              "skill": [
+                "my_info"
+              ],
+              "languag": [
+                "my_info"
+              ],
+              "speak": [
+                "my_info"
+              ],
+              "project": [
+                "my_info"
+              ],
+              "on": [
+                "my_info"
+              ],
+              "bio": [
+                "my_info"
+              ],
+              "no": [
+                "my_info"
+              ],
+              "reg": [
+                "my_info"
+              ],
+              "lpu": [
+                "my_info"
+              ],
+              "describ": [
+                "my_info"
+              ],
+              "experi": [
+                "my_info"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "bhosdik",
+                "bsdk",
+                "kutt",
+                "harmkhor",
+                "chutiya",
+                "gandu",
+                "madarchod",
+                "behenchod",
+                "sala",
+                "randi",
+                "bkl",
+                "lund",
+                "madharchod",
+                "bhadwa",
+                "teri",
+                "maa",
+                "ki",
+                "behen",
+                "kamina",
+                "harami",
+                "ullu",
+                "ke",
+                "path",
+                "gadha",
+                "hijra",
+                "laud",
+                "bhosada",
+                "chut",
+                "chutiy",
+                "chutmarika",
+                "dhakkan",
+                "lauda",
+                "ka",
+                "bhadw",
+                "bacha",
+                "pasin",
+                "gand",
+                "marwan",
+                "faad",
+                "me",
+                "danda",
+                "goli",
+                "le",
+                "ghusa",
+                "ung",
+                "aag",
+                "jalan",
+                "khujli",
+                "supari",
+                "bomb",
+                "patakha",
+                "rocket",
+                "missil",
+                "firecrack",
+                "dynamit",
+                "explos",
+                "blast",
+                "erupt",
+                "volcano",
+                "earthquak",
+                "tsunami",
+                "hurrican",
+                "tornado",
+                "bastard",
+                "dickhead",
+                "asshol",
+                "fuck",
+                "shit",
+                "bitch",
+                "cunt",
+                "prick",
+                "wanker",
+                "twat",
+                "slut",
+                "douchebag",
+                "pussi",
+                "cock",
+                "fucker",
+                "motherfuck",
+                "son",
+                "of",
+                "a",
+                "whore",
+                "skank",
+                "scumbag",
+                "pig",
+                "dog",
+                "rat",
+                "snake",
+                "coward",
+                "idiot",
+                "moron",
+                "dumbass",
+                "retard",
+                "loser",
+                "freak",
+                "weirdo",
+                "creep",
+                "pervert",
+                "jerk",
+                "bulli",
+                "nerd",
+                "geek",
+                "dork",
+                "lame",
+                "pathet",
+                "weakl",
+                "sissi",
+                "pansi",
+                "wimp",
+                "crybabi",
+                "spoil",
+                "brat",
+                "bimbo",
+                "airhead",
+                "ditz",
+                "dumb",
+                "blond",
+                "gold",
+                "digger",
+                "attent",
+                "seeker",
+                "drama",
+                "queen",
+                "hypocrit",
+                "liar",
+                "cheater",
+                "backstabb",
+                "traitor",
+                "snitch",
+                "tattletal",
+                "gossip",
+                "blabbermouth",
+                "loudmouth",
+                "bigmouth",
+                "know-it-al",
+                "smartass",
+                "wiseass",
+                "show-off",
+                "braggart",
+                "boaster",
+                "egoist",
+                "narcissist",
+                "self-cent",
+                "selfish",
+                "greedi",
+                "glutton",
+                "piggi",
+                "hog",
+                "slob",
+                "messi",
+                "dirti",
+                "filthi",
+                "stinki",
+                "smelli",
+                "gross",
+                "disgust",
+                "nasti",
+                "hi",
+                "hey",
+                "holla",
+                "hello",
+                "howdi",
+                "good",
+                "morn",
+                "afternoon",
+                "even",
+                "greet",
+                "what",
+                "is",
+                "up",
+                "yo",
+                "hiya",
+                "how",
+                "it",
+                "go",
+                "are",
+                "you",
+                "sup",
+                "there",
+                "day",
+                "salut",
+                "thing",
+                "do",
+                "can",
+                "i",
+                "have",
+                "the",
+                "techsprint",
+                "registr",
+                "need",
+                "for",
+                "latest",
+                "could",
+                "get",
+                "data",
+                "sheet",
+                "tech",
+                "sprint",
+                "excel",
+                "file",
+                "who",
+                "your",
+                "name",
+                "tell",
+                "email",
+                "address",
+                "hobbi",
+                "interest",
+                "phone",
+                "number",
+                "full",
+                "contact",
+                "where",
+                "studi",
+                "occup",
+                "role",
+                "share",
+                "detail",
+                "univers",
+                "attend",
+                "favorit",
+                "activ",
+                "enjoy",
+                "job",
+                "titl",
+                "work",
+                "profession",
+                "background",
+                "educ",
+                "live",
+                "linkedin",
+                "profil",
+                "github",
+                "usernam",
+                "about",
+                "yourself",
+                "skill",
+                "languag",
+                "speak",
+                "project",
+                "on",
+                "bio",
+                "no",
+                "reg",
+                "lpu",
+                "describ",
+                "experi"
+              ],
+              "intents": [
+                "vulgarWords",
+                "greetings",
+                "wellBeing",
+                "request_file",
+                "my_info"
+              ],
+              "perceptrons": [
+                [
+                  1.9288114309310913,
+                  1.9288116693496704,
+                  1.928812026977539,
+                  1.9288123846054077,
+                  1.928812861442566,
+                  1.9288134574890137,
+                  1.92881441116333,
+                  1.9288150072097778,
+                  1.9288158416748047,
+                  1.9289090633392334,
+                  1.9286584854125977,
+                  1.9288221597671509,
+                  1.928672432899475,
+                  1.928824543952942,
+                  0.7753332853317261,
+                  0.37825044989585876,
+                  0.7753332853317261,
+                  0.37811538577079773,
+                  1.9288266897201538,
+                  1.9288280010223389,
+                  0.8290934562683105,
+                  0.2704690992832184,
+                  0.8290934562683105,
+                  1.928717017173767,
+                  1.9287197589874268,
+                  1.2797296047210693,
+                  1.9287109375,
+                  1.9281748533248901,
+                  1.9286820888519287,
+                  1.9286823272705078,
+                  -0.26983147859573364,
+                  1.928692102432251,
+                  0.6491650938987732,
+                  1.9287002086639404,
+                  -0.6495321393013,
+                  -0.26981818675994873,
+                  1.9736908674240112,
+                  -0.053290970623493195,
+                  -0.053328532725572586,
+                  -0.2859053313732147,
+                  0.24314112961292267,
+                  0.24301505088806152,
+                  0.24291719496250153,
+                  0.24283142387866974,
+                  0.2427498698234558,
+                  0.24266870319843292,
+                  0.24258579313755035,
+                  0.24250003695487976,
+                  0.24241062998771667,
+                  0.24231688678264618,
+                  0.24221831560134888,
+                  0.24211432039737701,
+                  0.24200448393821716,
+                  0.24188831448554993,
+                  0.2417653650045395,
+                  0.24163521826267242,
+                  0.24149763584136963,
+                  0.24135228991508484,
+                  0.24119894206523895,
+                  0.2410375028848648,
+                  0.24086777865886688,
+                  0.2406896948814392,
+                  0.24050307273864746,
+                  1.9290541410446167,
+                  1.9290567636489868,
+                  1.9290590286254883,
+                  1.9290601015090942,
+                  1.929060935974121,
+                  1.9290064573287964,
+                  1.9290560483932495,
+                  1.929054617881775,
+                  1.9290525913238525,
+                  1.9290499687194824,
+                  1.9290467500686646,
+                  1.9290426969528198,
+                  1.9290380477905273,
+                  1.929032564163208,
+                  1.929026484489441,
+                  1.9290196895599365,
+                  -0.000005197745849727653,
+                  -0.000005197745849727653,
+                  -0.000005197745849727653,
+                  1.929013967514038,
+                  1.9290060997009277,
+                  1.92899751663208,
+                  1.9289883375167847,
+                  1.9289785623550415,
+                  1.9289681911468506,
+                  1.9289573431015015,
+                  1.9289461374282837,
+                  1.9289343357086182,
+                  1.9289218187332153,
+                  1.928909420967102,
+                  1.928896188735962,
+                  1.9288829565048218,
+                  1.9288691282272339,
+                  1.9288551807403564,
+                  1.9288409948349,
+                  1.9288265705108643,
+                  1.928812026977539,
+                  1.9287974834442139,
+                  1.9287828207015991,
+                  1.9287676811218262,
+                  1.9287530183792114,
+                  1.9287383556365967,
+                  1.928723692893982,
+                  1.9287092685699463,
+                  1.9286948442459106,
+                  1.9286808967590332,
+                  1.9286667108535767,
+                  1.9286532402038574,
+                  0.0036834341008216143,
+                  1.9265811443328857,
+                  1.9285811185836792,
+                  1.9285670518875122,
+                  1.928553581237793,
+                  0.9643626809120178,
+                  0.9643626809120178,
+                  0.964360237121582,
+                  0.964360237121582,
+                  0.9643577933311462,
+                  0.9643577933311462,
+                  0.9643552899360657,
+                  0.9643552899360657,
+                  1.9285130500793457,
+                  1.9285002946853638,
+                  1.9284882545471191,
+                  1.9284765720367432,
+                  1.9284656047821045,
+                  1.9284553527832031,
+                  1.9284456968307495,
+                  1.9284366369247437,
+                  1.928428292274475,
+                  1.9284205436706543,
+                  1.9284136295318604,
+                  1.9284071922302246,
+                  1.9284017086029053,
+                  1.9283968210220337,
+                  1.9283926486968994,
+                  1.9283891916275024,
+                  1.9283863306045532,
+                  1.9283838272094727,
+                  1.9283822774887085,
+                  1.928381085395813,
+                  1.9283804893493652,
+                  1.9283804893493652,
+                  1.9283808469772339,
+                  1.9283814430236816,
+                  1.9283826351165771,
+                  1.9283839464187622,
+                  1.9283854961395264,
+                  1.92838716506958,
+                  1.9283888339996338,
+                  1.928390622138977,
+                  1.9283921718597412,
+                  1.9283934831619263,
+                  1.9283944368362427,
+                  1.92839515209198,
+                  -12.856945037841797,
+                  -12.815547943115234,
+                  -12.741291046142578,
+                  -12.723908424377441,
+                  -12.669575691223145,
+                  -10.697677612304688,
+                  -2.998460531234741,
+                  -2.858250379562378,
+                  -2.742616891860962,
+                  -12.628436088562012,
+                  -4.297908782958984,
+                  -5.181177616119385,
+                  -3.537484884262085,
+                  -12.592558860778809,
+                  -12.564960479736328,
+                  -5.449438571929932,
+                  -1.3569732904434204,
+                  -1.3569732904434204,
+                  -5.076842784881592,
+                  -6.416126728057861,
+                  -12.538176536560059,
+                  -4.294381141662598,
+                  -2.0678200721740723,
+                  -12.51000690460205,
+                  -2.217454433441162,
+                  -3.006045341491699,
+                  -0.8349443078041077,
+                  -1.6484479904174805,
+                  -0.8096073269844055,
+                  -2.1351561546325684,
+                  -12.497884750366211,
+                  -8.28162956237793,
+                  -0.9787566661834717,
+                  -1.9902368783950806,
+                  -4.43134880065918,
+                  -0.4015755355358124,
+                  -0.4015755355358124,
+                  -0.4015755355358124,
+                  -0.4015755355358124,
+                  -5.859555244445801,
+                  -6.814220428466797,
+                  -1.2013463973999023,
+                  -1.2013463973999023,
+                  -1.2027348279953003,
+                  -5.16729211807251,
+                  -0.1653776615858078,
+                  -5.369516849517822,
+                  -0.9913710355758667,
+                  -0.9913710355758667,
+                  -0.1344510018825531,
+                  -0.05366726964712143,
+                  -0.8780988454818726,
+                  -0.8780988454818726,
+                  0,
+                  -0.0906575545668602,
+                  -2.4552009105682373,
+                  -0.8775676488876343,
+                  0,
+                  0,
+                  -0.16480304300785065,
+                  -0.0906575545668602,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.8959132432937622,
+                  -2.5083372592926025,
+                  0,
+                  0,
+                  -0.8208298683166504,
+                  -0.06862731277942657,
+                  -0.06862731277942657,
+                  0,
+                  0,
+                  -3.3497087955474854,
+                  -3.3497087955474854,
+                  0,
+                  0,
+                  0,
+                  -0.13946610689163208,
+                  -0.13946610689163208,
+                  0,
+                  -6.797262668609619,
+                  -5.869574546813965,
+                  0,
+                  -2.5083372592926025,
+                  -2.5083372592926025,
+                  12.35709855417308
+                ],
+                [
+                  -2.277414083480835,
+                  -2.247450351715088,
+                  -2.2085371017456055,
+                  -2.1659562587738037,
+                  -2.1304519176483154,
+                  -2.1102705001831055,
+                  -2.076735734939575,
+                  -2.0464935302734375,
+                  -2.016812801361084,
+                  -2.011965751647949,
+                  -1.8792568445205688,
+                  -1.9511477947235107,
+                  -1.8112289905548096,
+                  -1.9058040380477905,
+                  -1.0112872123718262,
+                  -0.7535500526428223,
+                  -1.0112872123718262,
+                  -0.5003504753112793,
+                  -1.8810580968856812,
+                  -1.8671462535858154,
+                  -0.6078127026557922,
+                  -1.1591805219650269,
+                  -0.6078127026557922,
+                  -1.6831285953521729,
+                  -1.6615623235702515,
+                  -0.9686617851257324,
+                  -1.6276648044586182,
+                  -1.6575140953063965,
+                  -1.5811916589736938,
+                  -1.553171992301941,
+                  -0.15906724333763123,
+                  -1.5233327150344849,
+                  -0.892558217048645,
+                  -1.4948093891143799,
+                  -0.1570143848657608,
+                  -0.06902620941400528,
+                  -1.6624634265899658,
+                  -0.41740983724594116,
+                  -0.3848550021648407,
+                  -1.711740255355835,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1.4040586948394775,
+                  -1.3792450428009033,
+                  -1.3626245260238647,
+                  -1.3399204015731812,
+                  -1.317297339439392,
+                  -1.3176562786102295,
+                  -1.283552885055542,
+                  -1.262819528579712,
+                  -1.2488799095153809,
+                  -1.2297874689102173,
+                  -1.2156964540481567,
+                  -1.1980949640274048,
+                  -1.1804630756378174,
+                  -1.167743444442749,
+                  -1.1514345407485962,
+                  -1.1350791454315186,
+                  -0.1490812450647354,
+                  -0.1490812450647354,
+                  -0.1490812450647354,
+                  -1.1226149797439575,
+                  -1.1073943376541138,
+                  -1.0959184169769287,
+                  -1.0817804336547852,
+                  -1.067563533782959,
+                  -1.057350993156433,
+                  -1.044100046157837,
+                  -1.034111499786377,
+                  -1.0217390060424805,
+                  -1.0120900869369507,
+                  -1.0005141496658325,
+                  -0.9912709593772888,
+                  -0.9804157018661499,
+                  -0.9716231226921082,
+                  -0.9614189863204956,
+                  -0.9531100988388062,
+                  -0.9434936046600342,
+                  -0.935692310333252,
+                  -0.9266052842140198,
+                  -0.9193272590637207,
+                  -0.9107165336608887,
+                  -0.9039697051048279,
+                  -0.8972207903862,
+                  -0.8895686268806458,
+                  -0.8833795189857483,
+                  -0.8772743344306946,
+                  -0.8704220652580261,
+                  -0.8648729920387268,
+                  -0.859459638595581,
+                  -0.24140532314777374,
+                  -0.8638121485710144,
+                  -0.8500075340270996,
+                  -0.8445116281509399,
+                  -0.839901864528656,
+                  -0.44459909200668335,
+                  -0.44459909200668335,
+                  -0.44347864389419556,
+                  -0.44347864389419556,
+                  -0.44302961230278015,
+                  -0.44302961230278015,
+                  -0.4420023262500763,
+                  -0.4420023262500763,
+                  -0.8303723931312561,
+                  -0.8263037800788879,
+                  -0.8224828243255615,
+                  -0.818903923034668,
+                  -0.8158708214759827,
+                  -0.8128116726875305,
+                  -0.8102056384086609,
+                  -0.8076408505439758,
+                  -0.8055058121681213,
+                  -0.8035850524902344,
+                  -0.8019866943359375,
+                  -0.8005152940750122,
+                  -0.7996721267700195,
+                  -0.799578845500946,
+                  -0.7995575666427612,
+                  -0.7995412349700928,
+                  -0.7995255589485168,
+                  -0.7995098233222961,
+                  -0.7994938492774963,
+                  -0.7994779348373413,
+                  -0.7994619011878967,
+                  -0.799445629119873,
+                  -0.7994291186332703,
+                  -0.7994124889373779,
+                  -0.799395740032196,
+                  -0.7993785738945007,
+                  -0.7993612289428711,
+                  -0.7993435859680176,
+                  -0.799325704574585,
+                  -0.7993075251579285,
+                  -0.7992887496948242,
+                  -0.7992696762084961,
+                  -0.7992502450942993,
+                  -0.7992302775382996,
+                  13.48890495300293,
+                  13.489089965820312,
+                  13.486693382263184,
+                  13.488880157470703,
+                  13.486794471740723,
+                  10.677231788635254,
+                  2.8107101917266846,
+                  2.8107385635375977,
+                  2.810839891433716,
+                  13.486984252929688,
+                  1.5813215970993042,
+                  3.6551051139831543,
+                  8.250394821166992,
+                  13.487008094787598,
+                  13.487021446228027,
+                  2.1940741539001465,
+                  -0.08724354207515717,
+                  -0.08724354207515717,
+                  1.8029342889785767,
+                  1.185791015625,
+                  12.921557426452637,
+                  -0.5633113384246826,
+                  2.2450387477874756,
+                  12.920829772949219,
+                  -5.180947780609131,
+                  -4.426462173461914,
+                  -1.403968334197998,
+                  -2.0160913467407227,
+                  -1.2961103916168213,
+                  -1.490580439567566,
+                  -3.3681130409240723,
+                  -3.51482892036438,
+                  -0.4171249568462372,
+                  -1.1556549072265625,
+                  -1.2205499410629272,
+                  -0.3027535378932953,
+                  -0.3027535378932953,
+                  -0.3027535378932953,
+                  -0.3027535378932953,
+                  -1.5883852243423462,
+                  -2.1440815925598145,
+                  -0.5648186802864075,
+                  -0.5648186802864075,
+                  -3.8812973499298096,
+                  -5.922181606292725,
+                  -1.3124573230743408,
+                  -1.2815330028533936,
+                  -0.28910475969314575,
+                  -0.5739597082138062,
+                  -0.24946634471416473,
+                  -0.18254901468753815,
+                  -0.16442157328128815,
+                  -0.16442157328128815,
+                  -0.4142245054244995,
+                  -0.8243114948272705,
+                  -0.5421425700187683,
+                  -0.29572537541389465,
+                  -0.7787991762161255,
+                  -0.6837506294250488,
+                  0,
+                  0,
+                  -0.10525283962488174,
+                  -0.10525283962488174,
+                  0,
+                  0,
+                  -0.10905490815639496,
+                  -0.36311623454093933,
+                  -0.36311623454093933,
+                  -0.8466470241546631,
+                  -0.34997090697288513,
+                  -0.4245379865169525,
+                  -0.22545631229877472,
+                  -0.06728851050138474,
+                  0,
+                  0,
+                  -0.2765338122844696,
+                  -0.2765338122844696,
+                  -0.6249698400497437,
+                  -0.6249698400497437,
+                  0,
+                  -0.03192270174622536,
+                  -0.03192270174622536,
+                  -0.7164544463157654,
+                  -0.7164544463157654,
+                  -0.41682830452919006,
+                  -1.7383058071136475,
+                  -1.4215644598007202,
+                  0,
+                  -0.12417140603065491,
+                  -0.12417140603065491,
+                  0.8000019735126903
+                ],
+                [
+                  -0.06439957767724991,
+                  -0.0621488019824028,
+                  -0.05997481569647789,
+                  -0.05787507817149162,
+                  -0.05584713816642761,
+                  -0.053888626396656036,
+                  -0.05199722945690155,
+                  -0.05017072707414627,
+                  -0.04840695858001709,
+                  -0.05462804064154625,
+                  -0.03730914741754532,
+                  -0.04382603242993355,
+                  -0.034576065838336945,
+                  -0.04102542623877525,
+                  -0.0429028682410717,
+                  -0.03257707133889198,
+                  -0.0429028682410717,
+                  -0.01938040181994438,
+                  -0.04024580493569374,
+                  -0.03890380635857582,
+                  -0.018759414553642273,
+                  -0.05382009595632553,
+                  -0.018759414553642273,
+                  -0.027490336447954178,
+                  -0.026434503495693207,
+                  -0.02823755517601967,
+                  -0.024888604879379272,
+                  -0.039334867149591446,
+                  -0.023127028718590736,
+                  -0.022237122058868408,
+                  -0.007389603648334742,
+                  -0.020999031141400337,
+                  -0.024140615016222,
+                  -0.019609279930591583,
+                  -0.006967740599066019,
+                  -0.004233093000948429,
+                  -0.04218031466007233,
+                  -0.011192819103598595,
+                  -0.009894285351037979,
+                  -0.27062082290649414,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.012346960604190826,
+                  -0.011865631677210331,
+                  -0.011402999050915241,
+                  -0.010958338156342506,
+                  -0.010530956089496613,
+                  -0.014859397895634174,
+                  -0.009750337339937687,
+                  -0.009369859471917152,
+                  -0.00900417659431696,
+                  -0.008652715012431145,
+                  -0.008314925245940685,
+                  -0.007990275509655476,
+                  -0.007678259164094925,
+                  -0.007378384005278349,
+                  -0.007090181577950716,
+                  -0.006813197396695614,
+                  -0.003578884294256568,
+                  -0.003578884294256568,
+                  -0.003578884294256568,
+                  -0.006385992281138897,
+                  -0.006136296782642603,
+                  -0.005896333139389753,
+                  -0.005665722768753767,
+                  -0.005444101989269257,
+                  -0.005231122486293316,
+                  -0.005026448052376509,
+                  -0.004829755984246731,
+                  -0.004640736151486635,
+                  -0.004459090530872345,
+                  -0.0042845322750508785,
+                  -0.004116786178201437,
+                  -0.003955586813390255,
+                  -0.0038006799295544624,
+                  -0.003651820356026292,
+                  -0.00350877339951694,
+                  -0.003371312515810132,
+                  -0.003239220241084695,
+                  -0.003112287726253271,
+                  -0.0029903140384703875,
+                  -0.002873106626793742,
+                  -0.002760479226708412,
+                  -0.0026522534899413586,
+                  -0.002548258053138852,
+                  -0.002448328537866473,
+                  -0.00235230615362525,
+                  -0.002260038396343589,
+                  -0.002171379281207919,
+                  -0.002086188178509474,
+                  -0.0017258216394111514,
+                  -0.0038425757084041834,
+                  -0.001872265711426735,
+                  -0.0017987467581406236,
+                  -0.0017281065229326487,
+                  -0.0015601783525198698,
+                  -0.0015601783525198698,
+                  -0.0015030631329864264,
+                  -0.0015030631329864264,
+                  -0.001448010909371078,
+                  -0.001448010909371078,
+                  -0.0013949486892670393,
+                  -0.0013949486892670393,
+                  -0.0014287644298747182,
+                  -0.0013725929893553257,
+                  -0.001318624010309577,
+                  -0.001266771461814642,
+                  -0.001216952339746058,
+                  -0.001169087365269661,
+                  -0.0011231000535190105,
+                  -0.001078916946426034,
+                  -0.0010364674963057041,
+                  -0.000995683716610074,
+                  -0.0009565007057972252,
+                  -0.0009188555995933712,
+                  -0.0008826882694847882,
+                  -0.0008479409734718502,
+                  -0.000814557948615402,
+                  -0.0007824858766980469,
+                  -0.0007516733603551984,
+                  -0.0007220710976980627,
+                  -0.000693631824105978,
+                  -0.0006663097301498055,
+                  -0.0006400612182915211,
+                  -0.0006148441461846232,
+                  -0.0005906181177124381,
+                  -0.0005673443083651364,
+                  -0.0005449853488244116,
+                  -0.0005235054413788021,
+                  -0.000502870068885386,
+                  -0.0004830461402889341,
+                  -0.0004640017868950963,
+                  -0.00044570647878572345,
+                  -0.0004281307919882238,
+                  -0.0004112465539947152,
+                  -0.0003950265818275511,
+                  -0.00037944482755847275,
+                  -0.0003644762618932873,
+                  -0.0003500967868603766,
+                  -0.000336283294018358,
+                  -0.00032301354804076254,
+                  -0.00031026621581986547,
+                  -0.0007781038875691593,
+                  -0.00024150578246917576,
+                  -0.00021692379959858954,
+                  -0.00019238384265918285,
+                  -0.00027255015447735786,
+                  -3.921949863433838,
+                  -0.9612295627593994,
+                  -0.006677803583443165,
+                  -0.00021408373140729964,
+                  -0.00020546467567328364,
+                  10.542073249816895,
+                  -0.6266831159591675,
+                  -0.6266831159591675,
+                  -0.2858228385448456,
+                  -1.532927393913269,
+                  0,
+                  0,
+                  0,
+                  0,
+                  4.8271636962890625,
+                  5.913746356964111,
+                  -2.8550984859466553,
+                  -2.9801313877105713,
+                  -0.26523035764694214,
+                  -0.4118400812149048,
+                  -0.5419678688049316,
+                  -0.6114196181297302,
+                  -0.09159784764051437,
+                  -0.2037990391254425,
+                  -0.2919202446937561,
+                  -0.14287905395030975,
+                  -0.14287905395030975,
+                  -0.14287905395030975,
+                  -0.14287905395030975,
+                  -0.17115497589111328,
+                  -0.27867937088012695,
+                  -0.07332324981689453,
+                  -0.07332324981689453,
+                  -1.4663448333740234,
+                  -1.010169267654419,
+                  -0.19584406912326813,
+                  -0.08679389953613281,
+                  -0.03615116700530052,
+                  -0.03615116700530052,
+                  -0.2745099365711212,
+                  -0.2388097643852234,
+                  -0.013523572124540806,
+                  -0.013523572124540806,
+                  -0.037882354110479355,
+                  -2.7153120040893555,
+                  -2.9705049991607666,
+                  -0.9827052354812622,
+                  -0.019706444814801216,
+                  -0.014409483410418034,
+                  0,
+                  0,
+                  -0.25384050607681274,
+                  -0.25384050607681274,
+                  -0.032113827764987946,
+                  -0.032113827764987946,
+                  -0.42963144183158875,
+                  -0.002111016307026148,
+                  -0.002111016307026148,
+                  -0.991766631603241,
+                  0,
+                  0,
+                  0,
+                  -0.9956551194190979,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.003243999322876334,
+                  -0.003243999322876334,
+                  -0.12544463574886322,
+                  -0.18692675232887268,
+                  -0.18692675232887268,
+                  0,
+                  0,
+                  0,
+                  -0.04680649936199188,
+                  -0.04680649936199188,
+                  0,
+                  0,
+                  0,
+                  -0.48427685477919863
+                ],
+                [
+                  -0.45870593190193176,
+                  -0.4461674690246582,
+                  -0.4339204430580139,
+                  -0.4219607710838318,
+                  -0.4102841317653656,
+                  -0.4053143560886383,
+                  -0.39486193656921387,
+                  -0.3868361711502075,
+                  -0.3775724768638611,
+                  -0.39051389694213867,
+                  -0.33823075890541077,
+                  -0.35760146379470825,
+                  -0.3204570710659027,
+                  -0.343353807926178,
+                  -0.270427405834198,
+                  -0.22748668491840363,
+                  -0.270427405834198,
+                  -0.10968627035617828,
+                  -0.33457180857658386,
+                  -0.3284834027290344,
+                  -0.12937362492084503,
+                  -0.32330939173698425,
+                  -0.12937362492084503,
+                  -0.2871645987033844,
+                  -0.2799830138683319,
+                  -0.1950335055589676,
+                  -0.2735331654548645,
+                  -0.3047216534614563,
+                  -0.2624690532684326,
+                  -0.25824347138404846,
+                  -0.04073045030236244,
+                  -0.2515072524547577,
+                  -0.17411735653877258,
+                  -0.24550795555114746,
+                  -0.050977714359760284,
+                  -0.023385291919112206,
+                  -0.6923010349273682,
+                  -0.035696014761924744,
+                  -0.03194832801818848,
+                  -0.634172260761261,
+                  -0.09223353862762451,
+                  -0.07419748604297638,
+                  -0.05811179801821709,
+                  -0.04456144943833351,
+                  -0.03357968106865883,
+                  -0.02492901310324669,
+                  -0.018264172598719597,
+                  -0.013221636414527893,
+                  -0.009464885108172894,
+                  -0.006703677121549845,
+                  -0.004698838572949171,
+                  -0.0032595726661384106,
+                  -0.002237368607893586,
+                  -0.0015189133118838072,
+                  -0.001019144430756569,
+                  -0.0006751272594556212,
+                  -0.00044088487629778683,
+                  -0.00028321085846982896,
+                  -0.00018033866945188493,
+                  -0.00011670344974845648,
+                  -0.0000741206094971858,
+                  -0.00004602726039593108,
+                  -0.000027786176360677928,
+                  -0.22237882018089294,
+                  -0.21858923137187958,
+                  -0.2156231552362442,
+                  -0.2128078192472458,
+                  -0.2101636677980423,
+                  -0.21270470321178436,
+                  -0.20584535598754883,
+                  -0.20368818938732147,
+                  -0.2016945779323578,
+                  -0.19985578954219818,
+                  -0.19832177460193634,
+                  -0.19678537547588348,
+                  -0.196257546544075,
+                  -0.19624586403369904,
+                  -0.19623751938343048,
+                  -0.19622933864593506,
+                  -0.029625946655869484,
+                  -0.029625946655869484,
+                  -0.029625946655869484,
+                  -0.19622109830379486,
+                  -0.1962127536535263,
+                  -0.19620420038700104,
+                  -0.19619549810886383,
+                  -0.19618664681911469,
+                  -0.19617757201194763,
+                  -0.19616836309432983,
+                  -0.19615896046161652,
+                  -0.19614937901496887,
+                  -0.19613957405090332,
+                  -0.19612960517406464,
+                  -0.19611941277980804,
+                  -0.19610902667045593,
+                  -0.1960984170436859,
+                  -0.19608761370182037,
+                  -0.19607658684253693,
+                  -0.19606535136699677,
+                  -0.1960538625717163,
+                  -0.19604215025901794,
+                  -0.19603022933006287,
+                  -0.1960180550813675,
+                  -0.19600562751293182,
+                  -0.19599299132823944,
+                  -0.19598005712032318,
+                  -0.195966899394989,
+                  -0.19595342874526978,
+                  -0.19593971967697144,
+                  -0.1959257274866104,
+                  -0.1959114521741867,
+                  -0.038865476846694946,
+                  -0.1958969086408615,
+                  -0.19588202238082886,
+                  -0.19586686789989471,
+                  -0.1958514004945755,
+                  -0.09800534695386887,
+                  -0.09800534695386887,
+                  -0.09800288081169128,
+                  -0.09800288081169128,
+                  -0.09800037741661072,
+                  -0.09800037741661072,
+                  -0.09799787402153015,
+                  -0.09799787402153015,
+                  -0.19580990076065063,
+                  -0.1957932561635971,
+                  -0.19577626883983612,
+                  -0.1957588940858841,
+                  -0.1957411915063858,
+                  -0.19572311639785767,
+                  -0.1957046538591385,
+                  -0.19568581879138947,
+                  -0.19566655158996582,
+                  -0.19564686715602875,
+                  -0.19562681019306183,
+                  -0.1956062912940979,
+                  -0.19558532536029816,
+                  -0.1955638974905014,
+                  -0.19554200768470764,
+                  -0.19551964104175568,
+                  -0.19549676775932312,
+                  -0.19547343254089355,
+                  -0.19544954597949982,
+                  -0.1954251229763031,
+                  -0.1954001635313034,
+                  -0.19537463784217834,
+                  -0.19534854590892792,
+                  -0.19532185792922974,
+                  -0.1952945590019226,
+                  -0.19526664912700653,
+                  -0.19523808360099792,
+                  -0.1952088624238968,
+                  -0.19517898559570312,
+                  -0.19514840841293335,
+                  -0.19511713087558746,
+                  -0.19508512318134308,
+                  -0.1950523555278778,
+                  -0.19501884281635284,
+                  -0.1949845403432846,
+                  -0.1949494481086731,
+                  -0.19491352140903473,
+                  -0.1948767453432083,
+                  -0.19483910501003265,
+                  -0.15627728402614594,
+                  -0.039127837866544724,
+                  -0.039112433791160583,
+                  -0.0390978641808033,
+                  -0.19478724896907806,
+                  -2.1804089546203613,
+                  -1.369347333908081,
+                  0,
+                  -0.19474750757217407,
+                  -0.19470684230327606,
+                  -0.7209711074829102,
+                  0,
+                  0,
+                  -0.7952284216880798,
+                  -1.5671695470809937,
+                  -0.19466517865657806,
+                  -0.02164308726787567,
+                  -0.03891855105757713,
+                  -0.1946135312318802,
+                  0,
+                  -0.9206414222717285,
+                  -4.601806163787842,
+                  1.1866697072982788,
+                  -3.7381227016448975,
+                  2.9168102741241455,
+                  14.050329208374023,
+                  4.282706260681152,
+                  5.699459075927734,
+                  -4.21725606918335,
+                  9.80700397491455,
+                  0.8918759822845459,
+                  0.8918759822845459,
+                  0.8918759822845459,
+                  0.8918759822845459,
+                  4.317555904388428,
+                  9.78593921661377,
+                  2.126483678817749,
+                  2.126483678817749,
+                  -0.4161283075809479,
+                  -2.416720390319824,
+                  -0.28045743703842163,
+                  -0.9169235825538635,
+                  -0.25314101576805115,
+                  -0.25314101576805115,
+                  -0.10993563383817673,
+                  -0.07951787859201431,
+                  -0.1728348582983017,
+                  -1.0325627326965332,
+                  -0.05027313902974129,
+                  -0.8061580061912537,
+                  -0.5521968603134155,
+                  -0.21240678429603577,
+                  -0.012969974428415298,
+                  -0.0012088256189599633,
+                  -0.06437890231609344,
+                  -0.039561569690704346,
+                  -0.04675360023975372,
+                  -0.04675360023975372,
+                  0,
+                  0,
+                  -0.03126809373497963,
+                  0,
+                  0,
+                  -0.1986365020275116,
+                  0,
+                  0,
+                  0,
+                  -0.08461883664131165,
+                  -0.005036546383053064,
+                  -0.005036546383053064,
+                  0,
+                  0,
+                  -0.32770004868507385,
+                  -0.32770004868507385,
+                  0,
+                  0,
+                  0,
+                  -0.04177315905690193,
+                  -0.04177315905690193,
+                  0,
+                  -5.160603046417236,
+                  -0.14281202852725983,
+                  -0.2345941662788391,
+                  0,
+                  0,
+                  0.19639091865531424
+                ],
+                [
+                  -0.7490436434745789,
+                  -0.7320637702941895,
+                  -0.7105836272239685,
+                  -0.7008784413337708,
+                  -0.6817612051963806,
+                  -0.6630827188491821,
+                  -0.6572427153587341,
+                  -0.6476749777793884,
+                  -0.6449915766716003,
+                  -0.6578227281570435,
+                  -0.6401681303977966,
+                  -0.643974244594574,
+                  -0.6389443874359131,
+                  -0.6433495283126831,
+                  -0.4783959686756134,
+                  -0.415820449590683,
+                  -0.4783959686756134,
+                  -0.18291828036308289,
+                  -0.6430391669273376,
+                  -0.6427283883094788,
+                  -0.18238455057144165,
+                  -0.6081938147544861,
+                  -0.18238455057144165,
+                  -0.6368723511695862,
+                  -0.6362025737762451,
+                  -0.3495442569255829,
+                  -0.6355305910110474,
+                  -0.6348865628242493,
+                  -0.6341903805732727,
+                  -0.6335132718086243,
+                  -0.0915168821811676,
+                  -0.6328340768814087,
+                  -0.30446574091911316,
+                  -0.6321524977684021,
+                  -0.0888918787240982,
+                  -0.03738928958773613,
+                  -2.0773608684539795,
+                  -0.05387231707572937,
+                  -0.04812370240688324,
+                  0.4429076910018921,
+                  -0.28256407380104065,
+                  -0.24870188534259796,
+                  -0.20794814825057983,
+                  -0.16788983345031738,
+                  -0.13210146129131317,
+                  -0.1144278347492218,
+                  -0.08673959970474243,
+                  -0.06999201327562332,
+                  -0.05204985290765762,
+                  -0.036505453288555145,
+                  -0.02950923703610897,
+                  -0.02069648914039135,
+                  -0.015049576759338379,
+                  -0.01099182479083538,
+                  -0.0078002107329666615,
+                  -0.005066193174570799,
+                  -0.0035941293463110924,
+                  -0.002872879384085536,
+                  -0.0017796052852645516,
+                  -0.0012407529866322875,
+                  -0.0008590338402427733,
+                  -0.0005901221884414554,
+                  -0.00040185151738114655,
+                  -0.6306924223899841,
+                  -0.6300085783004761,
+                  -0.6293227076530457,
+                  -0.628634512424469,
+                  -0.6279442310333252,
+                  -0.6272517442703247,
+                  -0.6265571117401123,
+                  -0.625860333442688,
+                  -0.6251612901687622,
+                  -0.624459981918335,
+                  -0.6237565875053406,
+                  -0.6230507493019104,
+                  -0.6223428845405579,
+                  -0.6216328144073486,
+                  -0.6209203004837036,
+                  -0.6202055811882019,
+                  -0.0489494614303112,
+                  -0.0489494614303112,
+                  -0.0489494614303112,
+                  -0.6194885969161987,
+                  -0.6187694668769836,
+                  -0.6180479526519775,
+                  -0.6173241138458252,
+                  -0.6165979504585266,
+                  -0.6158695220947266,
+                  -0.6151387095451355,
+                  -0.6144055128097534,
+                  -0.6136699914932251,
+                  -0.6129322648048401,
+                  -0.6121919751167297,
+                  -0.6114493608474731,
+                  -0.6107044219970703,
+                  -0.6099570393562317,
+                  -0.6092072129249573,
+                  -0.6084548830986023,
+                  -0.6077002882957458,
+                  -0.6069430708885193,
+                  -0.6061835289001465,
+                  -0.6054215431213379,
+                  -0.6046569347381592,
+                  -0.6038898825645447,
+                  -0.6031203866004944,
+                  -0.6023483872413635,
+                  -0.6015737056732178,
+                  -0.6007965803146362,
+                  -0.6000168919563293,
+                  -0.5992345809936523,
+                  -0.59844970703125,
+                  -0.06355936825275421,
+                  -0.5976623892784119,
+                  -0.5968722105026245,
+                  -0.5960795283317566,
+                  -0.5952841639518738,
+                  -0.3025793433189392,
+                  -0.3025793433189392,
+                  -0.3023950159549713,
+                  -0.3023950159549713,
+                  -0.30221039056777954,
+                  -0.30221039056777954,
+                  -0.30202552676200867,
+                  -0.30202552676200867,
+                  -0.592941164970398,
+                  -0.5921355485916138,
+                  -0.5913270711898804,
+                  -0.5905159115791321,
+                  -0.5897021293640137,
+                  -0.5888853669166565,
+                  -0.5880661010742188,
+                  -0.587243914604187,
+                  -0.5864189267158508,
+                  -0.585591197013855,
+                  -0.5847605466842651,
+                  -0.5839271545410156,
+                  -0.5830909609794617,
+                  -0.582251787185669,
+                  -0.5814098119735718,
+                  -0.5805647373199463,
+                  -0.5797169208526611,
+                  -0.5788661241531372,
+                  -0.5780123472213745,
+                  -0.5771555304527283,
+                  -0.5762958526611328,
+                  -0.5754331946372986,
+                  -0.5745673775672913,
+                  -0.5736984610557556,
+                  -0.5728265643119812,
+                  -0.5719515681266785,
+                  -0.5710734724998474,
+                  -0.5701922178268433,
+                  -0.5693079233169556,
+                  -0.5684203505516052,
+                  -0.5675296187400818,
+                  -0.5666356682777405,
+                  -0.5657385587692261,
+                  -0.5648379921913147,
+                  -0.563934326171875,
+                  -0.5630273222923279,
+                  -0.5621170401573181,
+                  -0.5612032413482666,
+                  -0.5602864027023315,
+                  -0.46146872639656067,
+                  -0.11718887835741043,
+                  -0.11667025834321976,
+                  -0.11615491658449173,
+                  -0.5588557124137878,
+                  7.151413917541504,
+                  -5.151647090911865,
+                  -5.447658061981201,
+                  -0.557930052280426,
+                  -0.5570009350776672,
+                  -7.321496963500977,
+                  -0.09449639171361923,
+                  -0.09449639171361923,
+                  1.632010817527771,
+                  5.1468706130981445,
+                  -0.5546486377716064,
+                  -0.03308453410863876,
+                  -0.11049320548772812,
+                  -0.553520679473877,
+                  -0.04609361290931702,
+                  1.490372896194458,
+                  1.9901572465896606,
+                  5.907891273498535,
+                  -0.6480314135551453,
+                  -6.098290920257568,
+                  -3.3696131706237793,
+                  1.692198395729065,
+                  -2.0199222564697266,
+                  0,
+                  -2.0781280994415283,
+                  -0.6344373822212219,
+                  -0.6344373822212219,
+                  -0.6344373822212219,
+                  -0.6344373822212219,
+                  -0.06429316848516464,
+                  -2.057586431503296,
+                  0,
+                  0,
+                  6.998815536499023,
+                  2.9381513595581055,
+                  8.434914588928223,
+                  2.905111312866211,
+                  -0.6681243777275085,
+                  8.2371187210083,
+                  1.9886600971221924,
+                  2.0040974617004395,
+                  0.8794457316398621,
+                  6.6065850257873535,
+                  0.46606096625328064,
+                  7.981021881103516,
+                  4.7265424728393555,
+                  2.3662729263305664,
+                  8.60634994506836,
+                  8.570666313171387,
+                  -1.0395922660827637,
+                  -3.320505380630493,
+                  -0.027595411986112595,
+                  -0.027595411986112595,
+                  0.9766712784767151,
+                  0.9766712784767151,
+                  -0.06836181879043579,
+                  4.321031093597412,
+                  4.321031093597412,
+                  2.3228557109832764,
+                  4.003872871398926,
+                  4.654652118682861,
+                  3.9710519313812256,
+                  2.3129265308380127,
+                  2.280700445175171,
+                  2.280700445175171,
+                  4.229936122894287,
+                  4.229936122894287,
+                  2.703807830810547,
+                  7.603552341461182,
+                  0.44831588864326477,
+                  -0.09097899496555328,
+                  -0.09097899496555328,
+                  -2.6261565685272217,
+                  2.2749249935150146,
+                  8.20531177520752,
+                  9.144878387451172,
+                  4.40320348739624,
+                  -0.020898835733532906,
+                  3.322850227355957,
+                  3.322850227355957,
+                  0.6577956765990425
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "Bhosdike"
+      ],
+      [
+        "en",
+        "bsdk"
+      ],
+      [
+        "en",
+        "Kutte"
+      ],
+      [
+        "en",
+        "Harmkhor"
+      ],
+      [
+        "en",
+        "Chutiya"
+      ],
+      [
+        "en",
+        "Gandu"
+      ],
+      [
+        "en",
+        "Madarchod"
+      ],
+      [
+        "en",
+        "Behenchod"
+      ],
+      [
+        "en",
+        "Sala"
+      ],
+      [
+        "en",
+        "Randi"
+      ],
+      [
+        "en",
+        "Bkl"
+      ],
+      [
+        "en",
+        "Lund"
+      ],
+      [
+        "en",
+        "Madharchod"
+      ],
+      [
+        "en",
+        "Bhadwa"
+      ],
+      [
+        "en",
+        "Teri Maa Ki"
+      ],
+      [
+        "en",
+        "Teri Behen Ki"
+      ],
+      [
+        "en",
+        "Kamina"
+      ],
+      [
+        "en",
+        "Harami"
+      ],
+      [
+        "en",
+        "Ullu ke pathe"
+      ],
+      [
+        "en",
+        "Gadha"
+      ],
+      [
+        "en",
+        "Hijra"
+      ],
+      [
+        "en",
+        "Maa ke laude"
+      ],
+      [
+        "en",
+        "Bhosada"
+      ],
+      [
+        "en",
+        "Chut"
+      ],
+      [
+        "en",
+        "Chutiye"
+      ],
+      [
+        "en",
+        "Chutmarika"
+      ],
+      [
+        "en",
+        "Chut ke dhakkan"
+      ],
+      [
+        "en",
+        "Lauda"
+      ],
+      [
+        "en",
+        "Laude ka"
+      ],
+      [
+        "en",
+        "Bhadwe"
+      ],
+      [
+        "en",
+        "Randi ka bacha"
+      ],
+      [
+        "en",
+        "Chut ke pasine"
+      ],
+      [
+        "en",
+        "Gand"
+      ],
+      [
+        "en",
+        "Gand marwane"
+      ],
+      [
+        "en",
+        "Gand faad"
+      ],
+      [
+        "en",
+        "Gand me danda"
+      ],
+      [
+        "en",
+        "Gand me goli"
+      ],
+      [
+        "en",
+        "Gand me le"
+      ],
+      [
+        "en",
+        "Gand me ghusa"
+      ],
+      [
+        "en",
+        "Gand me ungli"
+      ],
+      [
+        "en",
+        "Gand me aag"
+      ],
+      [
+        "en",
+        "Gand me jalan"
+      ],
+      [
+        "en",
+        "Gand me khujli"
+      ],
+      [
+        "en",
+        "Gand me supari"
+      ],
+      [
+        "en",
+        "Gand me bomb"
+      ],
+      [
+        "en",
+        "Gand me patakha"
+      ],
+      [
+        "en",
+        "Gand me rocket"
+      ],
+      [
+        "en",
+        "Gand me missile"
+      ],
+      [
+        "en",
+        "Gand me firecracker"
+      ],
+      [
+        "en",
+        "Gand me dynamite"
+      ],
+      [
+        "en",
+        "Gand me explosion"
+      ],
+      [
+        "en",
+        "Gand me blast"
+      ],
+      [
+        "en",
+        "Gand me eruption"
+      ],
+      [
+        "en",
+        "Gand me volcano"
+      ],
+      [
+        "en",
+        "Gand me earthquake"
+      ],
+      [
+        "en",
+        "Gand me tsunami"
+      ],
+      [
+        "en",
+        "Gand me hurricane"
+      ],
+      [
+        "en",
+        "Gand me tornado"
+      ],
+      [
+        "en",
+        "Bhosdike"
+      ],
+      [
+        "en",
+        "bsdk"
+      ],
+      [
+        "en",
+        "Kutte"
+      ],
+      [
+        "en",
+        "Harmkhor"
+      ],
+      [
+        "en",
+        "Chutiya"
+      ],
+      [
+        "en",
+        "Gandu"
+      ],
+      [
+        "en",
+        "Madarchod"
+      ],
+      [
+        "en",
+        "Behenchod"
+      ],
+      [
+        "en",
+        "Sala"
+      ],
+      [
+        "en",
+        "Randi"
+      ],
+      [
+        "en",
+        "Lund"
+      ],
+      [
+        "en",
+        "Bhadwa"
+      ],
+      [
+        "en",
+        "Teri Maa Ki"
+      ],
+      [
+        "en",
+        "Teri Behen Ki"
+      ],
+      [
+        "en",
+        "Kamina"
+      ],
+      [
+        "en",
+        "Harami"
+      ],
+      [
+        "en",
+        "Bastard"
+      ],
+      [
+        "en",
+        "Dickhead"
+      ],
+      [
+        "en",
+        "Asshole"
+      ],
+      [
+        "en",
+        "Fuck"
+      ],
+      [
+        "en",
+        "Shit"
+      ],
+      [
+        "en",
+        "Bitch"
+      ],
+      [
+        "en",
+        "Cunt"
+      ],
+      [
+        "en",
+        "Prick"
+      ],
+      [
+        "en",
+        "Wanker"
+      ],
+      [
+        "en",
+        "Twat"
+      ],
+      [
+        "en",
+        "Slut"
+      ],
+      [
+        "en",
+        "Douchebag"
+      ],
+      [
+        "en",
+        "Pussy"
+      ],
+      [
+        "en",
+        "Cock"
+      ],
+      [
+        "en",
+        "Fucker"
+      ],
+      [
+        "en",
+        "Motherfucker"
+      ],
+      [
+        "en",
+        "Son of a bitch"
+      ],
+      [
+        "en",
+        "Whore"
+      ],
+      [
+        "en",
+        "Skank"
+      ],
+      [
+        "en",
+        "Scumbag"
+      ],
+      [
+        "en",
+        "Pig"
+      ],
+      [
+        "en",
+        "Dog"
+      ],
+      [
+        "en",
+        "Rat"
+      ],
+      [
+        "en",
+        "Snake"
+      ],
+      [
+        "en",
+        "Coward"
+      ],
+      [
+        "en",
+        "Idiot"
+      ],
+      [
+        "en",
+        "Moron"
+      ],
+      [
+        "en",
+        "Dumbass"
+      ],
+      [
+        "en",
+        "Retard"
+      ],
+      [
+        "en",
+        "Loser"
+      ],
+      [
+        "en",
+        "Freak"
+      ],
+      [
+        "en",
+        "Weirdo"
+      ],
+      [
+        "en",
+        "Creep"
+      ],
+      [
+        "en",
+        "Pervert"
+      ],
+      [
+        "en",
+        "Jerk"
+      ],
+      [
+        "en",
+        "Bully"
+      ],
+      [
+        "en",
+        "Nerd"
+      ],
+      [
+        "en",
+        "Geek"
+      ],
+      [
+        "en",
+        "Dork"
+      ],
+      [
+        "en",
+        "Lame"
+      ],
+      [
+        "en",
+        "Pathetic"
+      ],
+      [
+        "en",
+        "Weakling"
+      ],
+      [
+        "en",
+        "Sissy"
+      ],
+      [
+        "en",
+        "Pansy"
+      ],
+      [
+        "en",
+        "Wimp"
+      ],
+      [
+        "en",
+        "Crybaby"
+      ],
+      [
+        "en",
+        "Spoiled brat"
+      ],
+      [
+        "en",
+        "Brat"
+      ],
+      [
+        "en",
+        "Bimbo"
+      ],
+      [
+        "en",
+        "Airhead"
+      ],
+      [
+        "en",
+        "Ditz"
+      ],
+      [
+        "en",
+        "Dumb blonde"
+      ],
+      [
+        "en",
+        "Gold digger"
+      ],
+      [
+        "en",
+        "Attention seeker"
+      ],
+      [
+        "en",
+        "Drama queen"
+      ],
+      [
+        "en",
+        "Hypocrite"
+      ],
+      [
+        "en",
+        "Liar"
+      ],
+      [
+        "en",
+        "Cheater"
+      ],
+      [
+        "en",
+        "Backstabber"
+      ],
+      [
+        "en",
+        "Traitor"
+      ],
+      [
+        "en",
+        "Snitch"
+      ],
+      [
+        "en",
+        "Tattletale"
+      ],
+      [
+        "en",
+        "Gossip"
+      ],
+      [
+        "en",
+        "Blabbermouth"
+      ],
+      [
+        "en",
+        "Loudmouth"
+      ],
+      [
+        "en",
+        "Bigmouth"
+      ],
+      [
+        "en",
+        "Know-it-all"
+      ],
+      [
+        "en",
+        "Smartass"
+      ],
+      [
+        "en",
+        "Wiseass"
+      ],
+      [
+        "en",
+        "Show-off"
+      ],
+      [
+        "en",
+        "Braggart"
+      ],
+      [
+        "en",
+        "Boaster"
+      ],
+      [
+        "en",
+        "Egoist"
+      ],
+      [
+        "en",
+        "Narcissist"
+      ],
+      [
+        "en",
+        "Self-centered"
+      ],
+      [
+        "en",
+        "Selfish"
+      ],
+      [
+        "en",
+        "Greedy"
+      ],
+      [
+        "en",
+        "Glutton"
+      ],
+      [
+        "en",
+        "Piggy"
+      ],
+      [
+        "en",
+        "Hog"
+      ],
+      [
+        "en",
+        "Slob"
+      ],
+      [
+        "en",
+        "Messy"
+      ],
+      [
+        "en",
+        "Dirty"
+      ],
+      [
+        "en",
+        "Filthy"
+      ],
+      [
+        "en",
+        "Stinky"
+      ],
+      [
+        "en",
+        "Smelly"
+      ],
+      [
+        "en",
+        "Gross"
+      ],
+      [
+        "en",
+        "Disgusting"
+      ],
+      [
+        "en",
+        "Nasty"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "holla"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good afternoon"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
+        "greetings"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "yo"
+      ],
+      [
+        "en",
+        "hiya"
+      ],
+      [
+        "en",
+        "how's it going"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "sup"
+      ],
+      [
+        "en",
+        "hey there"
+      ],
+      [
+        "en",
+        "hi there"
+      ],
+      [
+        "en",
+        "hello there"
+      ],
+      [
+        "en",
+        "good day"
+      ],
+      [
+        "en",
+        "salutations"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "how's it going"
+      ],
+      [
+        "en",
+        "how are things"
+      ],
+      [
+        "en",
+        "how do you do"
+      ],
+      [
+        "en",
+        "Can I have the techsprint registrations?"
+      ],
+      [
+        "en",
+        "I need the registrations"
+      ],
+      [
+        "en",
+        "registrations for techsprint"
+      ],
+      [
+        "en",
+        "latest registrations"
+      ],
+      [
+        "en",
+        "techsprint"
+      ],
+      [
+        "en",
+        "Could you get me the latest data sheet?"
+      ],
+      [
+        "en",
+        "tech sprint"
+      ],
+      [
+        "en",
+        "sprint registrations"
+      ],
+      [
+        "en",
+        "excel file for techsprint"
+      ],
+      [
+        "en",
+        "who are you?"
+      ],
+      [
+        "en",
+        "What is your name?"
+      ],
+      [
+        "en",
+        "Tell me your email address."
+      ],
+      [
+        "en",
+        "What are your hobbies?"
+      ],
+      [
+        "en",
+        "What are your interests?"
+      ],
+      [
+        "en",
+        "Tell me your phone number"
+      ],
+      [
+        "en",
+        "What's your full name?"
+      ],
+      [
+        "en",
+        "How can I contact you?"
+      ],
+      [
+        "en",
+        "What do you do?"
+      ],
+      [
+        "en",
+        "Where do you study?"
+      ],
+      [
+        "en",
+        "What is your occupation?"
+      ],
+      [
+        "en",
+        "What is your role?"
+      ],
+      [
+        "en",
+        "Can you share your contact details?"
+      ],
+      [
+        "en",
+        "What university do you attend?"
+      ],
+      [
+        "en",
+        "What are your favorite activities?"
+      ],
+      [
+        "en",
+        "What do you enjoy doing?"
+      ],
+      [
+        "en",
+        "What is your job title?"
+      ],
+      [
+        "en",
+        "Where do you work?"
+      ],
+      [
+        "en",
+        "What is your professional background?"
+      ],
+      [
+        "en",
+        "What is your educational background?"
+      ],
+      [
+        "en",
+        "What is your address?"
+      ],
+      [
+        "en",
+        "Where do you live?"
+      ],
+      [
+        "en",
+        "Can you share your LinkedIn profile?"
+      ],
+      [
+        "en",
+        "What is your GitHub username?"
+      ],
+      [
+        "en",
+        "Tell me about yourself."
+      ],
+      [
+        "en",
+        "What skills do you have?"
+      ],
+      [
+        "en",
+        "What languages do you speak?"
+      ],
+      [
+        "en",
+        "What projects have you worked on?"
+      ],
+      [
+        "en",
+        "Can you tell me about your projects?"
+      ],
+      [
+        "en",
+        "What is your bio?"
+      ],
+      [
+        "en",
+        "What is your registration number?"
+      ],
+      [
+        "en",
+        "registration no."
+      ],
+      [
+        "en",
+        "reg no."
+      ],
+      [
+        "en",
+        "What is your registration number lpu?"
+      ],
+      [
+        "en",
+        "What is your registration no?"
+      ],
+      [
+        "en",
+        "Describe your professional experience."
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "vulgarWords": [
+          {
+            "answer": "Mind your language."
+          },
+          {
+            "answer": "Please speak respectfully."
+          },
+          {
+            "answer": "Let's keep the conversation civil."
+          },
+          {
+            "answer": "I prefer not to use such language."
+          },
+          {
+            "answer": "Can we keep it polite, please?"
+          },
+          {
+            "answer": "Let's use kind words."
+          },
+          {
+            "answer": "There's no need for that kind of language."
+          },
+          {
+            "answer": "Let's keep it friendly."
+          },
+          {
+            "answer": "Please refrain from using offensive language."
+          },
+          {
+            "answer": "Let's keep our conversation respectful."
+          }
+        ],
+        "greetings": [
+          {
+            "answer": "Hi! How can I help you?"
+          },
+          {
+            "answer": "Hello there!"
+          },
+          {
+            "answer": "Hey! What's up?"
+          },
+          {
+            "answer": "Greetings!"
+          },
+          {
+            "answer": "Hey there! How can I assist you?"
+          },
+          {
+            "answer": "Hi! What can I do for you today?"
+          },
+          {
+            "answer": "Hello! How's it going?"
+          },
+          {
+            "answer": "Hey! How are you doing?"
+          },
+          {
+            "answer": "Hi! Hope you're having a great day!"
+          },
+          {
+            "answer": "Hello! What brings you here?"
+          },
+          {
+            "answer": "Hey! Nice to meet you!"
+          },
+          {
+            "answer": "Hi! What brings you here?"
+          },
+          {
+            "answer": "Hello! How can I assist you?"
+          },
+          {
+            "answer": "Hi! How can I assist you?"
+          }
+        ],
+        "wellBeing": [
+          {
+            "answer": "I'm doing well, thank you! How about you?"
+          },
+          {
+            "answer": "I'm great, thanks for asking!"
+          },
+          {
+            "answer": "All good here, how are you?"
+          }
+        ],
+        "request_file": [
+          {
+            "answer": "Here's the requested file: "
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

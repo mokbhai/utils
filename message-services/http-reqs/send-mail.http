@@ -1,0 +1,13 @@
+POST http://localhost:3002/send-mail
+Authorization: Bearer d1bec3f42ad74ea2b5e66a0577fe3cca
+Content-Type: application/json
+
+{
+    "to": [
+        "mokshitjain18@gmail.com"
+    ],
+    "fromName": "Mokshit",
+    "subject": "subject of mail",
+    "text": "mail text",
+    "html": "<h1>hello html</h1>"
+}

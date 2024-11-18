@@ -1,0 +1,10 @@
+POST http://localhost:3002/send-whatsapp
+Authorization: Bearer d1bec3f42ad74ea2b5e66a0577fe3cca
+Content-Type: application/json
+
+{
+    "countryCode": 91,
+    "phone": 7000209021,
+    "subject": "Subject",
+    "message": "message"
+}
