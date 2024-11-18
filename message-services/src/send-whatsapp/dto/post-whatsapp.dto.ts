@@ -1,10 +1,10 @@
-import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
+import { IsNotEmpty, IsNumber, IsNumberString, IsString } from 'class-validator';
 
 export class SendWhatsapplDTO {
-  @IsNumber()
+  @IsNumberString()
   countryCode?: number;
 
-  @IsNumber()
+  @IsNumberString()
   phone?: number;
 
   @IsString()
