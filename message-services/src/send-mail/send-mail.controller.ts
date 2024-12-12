@@ -22,15 +22,17 @@ export class SendMailController {
   @Post()
   async send(@Body() mailData: SendMailDTO) {
     try {
+      console.log(mailData);
       await this.mailService.sendMail(mailData);
       return { success: true, message: 'Mail sent successfully' };
     } catch (error) {
+      console.error(error);
       return { success: false, message: 'Failed to send mail' };
     }
   }
 
   @Post('media')
-  @UseInterceptors(FileInterceptor('file')) // Make sure "file" matches your form field name
+  @UseInterceptors(FileInterceptor('file'))
   async sendMailWithMedia(
     @Body() mailData: SendMailDTO,
     @UploadedFile() file: Express.Multer.File,
