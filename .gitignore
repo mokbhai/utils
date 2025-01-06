@@ -39,3 +39,5 @@ lerna-debug.log*
 
 .wwebjs_cache
 .wwebjs_auth
+
+.venv

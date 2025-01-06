@@ -3,14 +3,15 @@ import { Client, LocalAuth, MessageMedia } from 'whatsapp-web.js';
 const qrcode = require('qrcode-terminal');
 import { SendWhatsapplDTO } from './dto/post-whatsapp.dto';
 
-const automatedMessage = '\n\nPlease note: This is an automated bot message.';
+// const automatedMessage = '\n\nPlease note: This is an automated bot message.';
+const automatedMessage = '';
 
 @Injectable()
 export class SendWhatsappService {
   private client: Client;
 
   constructor() {
-    console.log('Initializing WhatsApp client...'); 
+    console.log('Initializing WhatsApp client...');
 
     this.client = new Client({
       puppeteer: {
@@ -24,7 +25,7 @@ export class SendWhatsappService {
     });
 
     this.client.on('qr', (qr) => {
-      console.log('QR Code generated:', qr); 
+      console.log('QR Code generated:', qr);
       qrcode.generate(qr, { small: true });
     });
 
@@ -33,14 +34,13 @@ export class SendWhatsappService {
     });
 
     this.client.initialize();
-    console.log('WhatsApp client initialization started...'); 
+    console.log('WhatsApp client initialization started...');
   }
 
   async sendMessage(data: SendWhatsapplDTO): Promise<void> {
     try {
       const formattedNumber = data.countryCode + '' + data.phone + '@c.us';
-      const message =
-        '*' + data.subject + '*\n' + data.message + automatedMessage;
+      const message = data.message + automatedMessage;
       await this.client.sendMessage(formattedNumber, message);
     } catch (error) {
       console.error('Error sending WhatsApp message:', error);
