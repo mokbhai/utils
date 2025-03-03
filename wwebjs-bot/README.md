@@ -12,12 +12,22 @@ A Node.js-based WhatsApp bot that provides automated messaging capabilities usin
 - Express.js server for API endpoints
 - Automated responses to user queries using NLP
 - Intelligent message handling and context awareness
+- Advanced AI-powered responses using Google's Gemini API
 
 ## Prerequisites
 
 - Node.js (v18 or higher)
 - npm or yarn
 - A WhatsApp account
+- Google Gemini API key
+
+## Environment Variables
+
+Create a `.env` file in the root directory with the following variables:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+```
 
 ## Installation
 
@@ -44,13 +54,8 @@ npm start
 
 2. The server will start on port 4002. You'll need to scan the QR code that appears in the terminal to authenticate your WhatsApp account.
 
-3. To run the main bot functionality (message handling, automated responses, and scheduled tasks) & start messaging to whatsapp:
 
-```bash
-node main.js
-```
-
-4. Once authenticated, you can send messages using the API endpoint:
+3. Once authenticated, you can send messages using the API endpoint:
 
 ```bash
 curl -X POST http://localhost:4002/send-message \
@@ -154,3 +159,4 @@ Note: The model uses both rule-based and machine learning approaches to provide 
 - `userInfo.js` - User information management
 - `vlurgor.js` - Additional bot functionality
 - `model.nlp` - Trained NLP model data
+

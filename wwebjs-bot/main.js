@@ -6,16 +6,19 @@ const schedule = require("node-schedule");
 const initializeNLP = require("./nlp2.js");
 const getUserInfo = require("./userInfo.js");
 const Papa = require("papaparse");
+const { getGeminiResponse } = require("./geminiService");
+require("dotenv").config();
 
 const scheduledTimes = [11, 17]; // (24-hour format)
-const numbers = [
-  "917000209021@c.us",
-  "916284626764@c.us",
-  "919103367481@c.us",
-  "919888121794@c.us",
-];
+const numbers = ["917000209021@c.us"];
 
-// const numbers = ["917000209021@c.us", "919168546881@c.us"];
+// const numbers = [
+// "916284626764@c.us",
+// "919103367481@c.us",
+// "919888121794@c.us",
+// "917000209021@c.us",
+// "919168546881@c.us",
+// ];
 
 const instructions = `
 Welcome to the TechSprint WhatsApp Bot!
@@ -64,85 +67,99 @@ async function main() {
         resMessage += instructions;
       }
 
-      const response = await manager.process("en", reqMess);
+      // Get Gemini response for user queries
+      const geminiResponse = await getGeminiResponse(reqMess);
 
-      if (response.answer) resMessage += response.answer;
-      if (response.intent === "my_info") {
-        const infoMap = {
-          name: "name",
-          phone: "phone",
-          number: "phone",
-          email: "email",
-          work: "work",
-          occupation: "work",
-          role: "work",
-          school: "school",
-          college: "school",
-          university: "school",
-          interest: "interest",
-          hobbies: "interest",
-          "full name": "name",
-          contact: "phone",
-          "contact details": "phone",
-          "how can I contact you": "phone",
-          "where do you study": "school",
-          "what do you do": "work",
-          "where do you work": "work",
-          "job title": "work",
-          "professional background": "work",
-          "educational background": "school",
-          "favorite activities": "interest",
-          "enjoy doing": "interest",
-          address: "address",
-          "where do you live": "address",
-          linkedin: "linkedin",
-          "linkedin profile": "linkedin",
-          github: "github",
-          "github username": "github",
-          bio: "bio",
-          "about yourself": "bio",
-          skills: "skills",
-          "what skills do you have": "skills",
-          languages: "languages",
-          "what languages do you speak": "languages",
-          projects: "projects",
-          "tell me about your projects": "projects",
-          "project details": "projects",
-          "registration number": "regNo",
-          "registration no": "regNo",
-          "reg no": "regNo",
-          regno: "regNo",
-        };
+      // If Gemini provides a response, use it
+      if (
+        geminiResponse &&
+        geminiResponse !==
+          "I apologize, but I'm having trouble processing your request at the moment."
+      ) {
+        resMessage += geminiResponse;
+      } else {
+        // Fallback to existing NLP response
+        const response = await manager.process("en", reqMess);
+        if (response.answer) resMessage += response.answer;
 
-        let responses = [];
+        if (response.intent === "my_info") {
+          const infoMap = {
+            name: "name",
+            phone: "phone",
+            number: "phone",
+            email: "email",
+            work: "work",
+            occupation: "work",
+            role: "work",
+            school: "school",
+            college: "school",
+            university: "school",
+            interest: "interest",
+            hobbies: "interest",
+            "full name": "name",
+            contact: "phone",
+            "contact details": "phone",
+            "how can I contact you": "phone",
+            "where do you study": "school",
+            "what do you do": "work",
+            "where do you work": "work",
+            "job title": "work",
+            "professional background": "work",
+            "educational background": "school",
+            "favorite activities": "interest",
+            "enjoy doing": "interest",
+            address: "address",
+            "where do you live": "address",
+            linkedin: "linkedin",
+            "linkedin profile": "linkedin",
+            github: "github",
+            "github username": "github",
+            bio: "bio",
+            "about yourself": "bio",
+            skills: "skills",
+            "what skills do you have": "skills",
+            languages: "languages",
+            "what languages do you speak": "languages",
+            projects: "projects",
+            "tell me about your projects": "projects",
+            "project details": "projects",
+            "registration number": "regNo",
+            "registration no": "regNo",
+            "reg no": "regNo",
+            regno: "regNo",
+          };
 
-        for (const key in infoMap) {
-          if (response.utterance.toLowerCase().includes(key)) {
-            const infoKey = infoMap[key];
-            let infoValue = getUserInfo(infoKey);
+          let responses = [];
 
-            if (Array.isArray(infoValue)) {
-              infoValue = infoValue.join(", ");
-            } else if (typeof infoValue === "object") {
-              infoValue = JSON.stringify(infoValue, null, 2);
+          for (const key in infoMap) {
+            if (response.utterance.toLowerCase().includes(key)) {
+              const infoKey = infoMap[key];
+              let infoValue = getUserInfo(infoKey);
+
+              if (Array.isArray(infoValue)) {
+                infoValue = infoValue.join(", ");
+              } else if (typeof infoValue === "object") {
+                infoValue = JSON.stringify(infoValue, null, 2);
+              }
+
+              responses.push(`My ${key} is ${infoValue}.`);
             }
+          }
 
-            responses.push(`My ${key} is ${infoValue}.`);
+          if (responses.length !== 0) {
+            resMessage += responses.join("\n");
           }
         }
 
-        if (responses.length !== 0) {
-          resMessage += responses.join("\n");
+        if (response.intent === "request_file") {
+          await client.sendMessage(
+            message.from,
+            response.answer + automatedMessage
+          );
+          return await sendFile(message);
         }
       }
 
-      if (response.intent === "request_file") {
-        await client.sendMessage(
-          message.from,
-          response.answer + automatedMessage
-        );
-        return await sendFile(message);
-      }
       if (resMessage && resMessage !== "") {
         return client.sendMessage(message.from, resMessage + automatedMessage);
       }
@@ -242,7 +259,6 @@ const countRegistrationsAndSendMessage = async (buffer) => {
   }
 };
 
-
 async function sendMessageToSpecificNumber() {
   const message = "Hello Registration File For Today" + automatedMessage;
 
@@ -288,6 +304,6 @@ function scheduleMessages() {
   });
 }
 
-scheduleMessages();
+// scheduleMessages();
 
 module.exports = { sendMessageToNumber };
