@@ -1,3 +1,13 @@
+/**
+ * This file contains a list of inappropriate words and phrases used for content moderation.
+ * It's used to filter out inappropriate messages and maintain a respectful environment.
+ * The list includes both English and Hindi/Urdu inappropriate terms.
+ *
+ * Note: This file is used for content moderation purposes only and is not meant to promote
+ * or encourage the use of inappropriate language. It's part of the bot's safety features
+ * to maintain a respectful communication environment.
+ */
+
 const vulgarWords = [
   "Bhosdike",
   "bsdk",
@@ -11,7 +21,7 @@ const vulgarWords = [
   "Randi",
   "Bkl",
   "Lund",
-  'Madharchod',
+  "Madharchod",
   "Bhadwa",
   "Teri Maa Ki",
   "Teri Behen Ki",
@@ -23,7 +33,7 @@ const vulgarWords = [
   "Maa ke laude",
   "Bhosada",
   "Chut",
-  'Chutiye',
+  "Chutiye",
   "Chutmarika",
   "Chut ke dhakkan",
   "Lauda",
