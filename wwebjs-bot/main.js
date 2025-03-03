@@ -4,9 +4,9 @@ const fetch = require("node-fetch");
 const compromise = require("compromise");
 const schedule = require("node-schedule");
 const initializeNLP = require("./nlp2.js");
-const getUserInfo = require("./userInfo.js");
 const Papa = require("papaparse");
 const { getGeminiResponse } = require("./geminiService");
+const chatContext = require("./chatContext");
 require("dotenv").config();
 
 const scheduledTimes = [11, 17]; // (24-hour format)
@@ -21,11 +21,32 @@ const numbers = ["917000209021@c.us"];
 // ];
 
 const instructions = `
-Welcome to the TechSprint WhatsApp Bot!
+Welcome to the Mokshit Jain's MokBhaiMJ WhatsApp Bot! 👋
 
-Here are some commands you can use:
+Here are the available commands and features:
 
-* Send "hello" to receive a greeting.
+1. Basic Commands:
+   - "help" or "start" - Show this help message
+   - "hello" - Get a greeting
+
+2. Information Queries:
+   - Ask about my name, contact, work, education
+   - Ask about my skills, projects, or experience
+   - Ask about my interests or background
+
+3. Features:
+   - Automated responses to your queries
+   - Registration file sharing
+   - Event registration tracking
+   - Content moderation for respectful communication
+
+4. Examples:
+   - "What's your name?"
+   - "Tell me about your projects"
+   - "What skills do you have?"
+   - "How can I contact you?"
+
+Note: This is an AI-powered bot that can understand natural language queries. Feel free to ask questions in your own words!
 `;
 
 const automatedMessage = "\n\nPlease note: This is an automated bot message.";
@@ -63,100 +84,44 @@ async function main() {
       const nlp = compromise(message.body.toLowerCase());
       const reqMess = message.body.toLowerCase().replace(/\n/g, "").trim();
 
-      if (nlp.has("help") || nlp.has("instruction") || nlp.has("start")) {
-        resMessage += instructions;
+      // Only show instructions for help, start, or instruction commands
+      if (
+        reqMess === "help" ||
+        reqMess === "start" ||
+        reqMess === "instruction"
+      ) {
+        return client.sendMessage(
+          message.from,
+          instructions + automatedMessage
+        );
       }
 
-      // Get Gemini response for user queries
-      const geminiResponse = await getGeminiResponse(reqMess);
+      // First try NLP processing
+      const response = await manager.process("en", reqMess);
 
-      // If Gemini provides a response, use it
-      if (
-        geminiResponse &&
-        geminiResponse !==
-          "I apologize, but I'm having trouble processing your request at the moment."
-      ) {
-        resMessage += geminiResponse;
-      } else {
-        // Fallback to existing NLP response
-        const response = await manager.process("en", reqMess);
-        if (response.answer) resMessage += response.answer;
+      // Handle NLP intents first
+      if (response.intent === "request_file") {
+        await client.sendMessage(
+          message.from,
+          response.answer + automatedMessage
+        );
+        return await sendFile(message);
+      }
 
-        if (response.intent === "my_info") {
-          const infoMap = {
-            name: "name",
-            phone: "phone",
-            number: "phone",
-            email: "email",
-            work: "work",
-            occupation: "work",
-            role: "work",
-            school: "school",
-            college: "school",
-            university: "school",
-            interest: "interest",
-            hobbies: "interest",
-            "full name": "name",
-            contact: "phone",
-            "contact details": "phone",
-            "how can I contact you": "phone",
-            "where do you study": "school",
-            "what do you do": "work",
-            "where do you work": "work",
-            "job title": "work",
-            "professional background": "work",
-            "educational background": "school",
-            "favorite activities": "interest",
-            "enjoy doing": "interest",
-            address: "address",
-            "where do you live": "address",
-            linkedin: "linkedin",
-            "linkedin profile": "linkedin",
-            github: "github",
-            "github username": "github",
-            bio: "bio",
-            "about yourself": "bio",
-            skills: "skills",
-            "what skills do you have": "skills",
-            languages: "languages",
-            "what languages do you speak": "languages",
-            projects: "projects",
-            "tell me about your projects": "projects",
-            "project details": "projects",
-            "registration number": "regNo",
-            "registration no": "regNo",
-            "reg no": "regNo",
-            regno: "regNo",
-          };
+      // If NLP has an answer, use it
+      if (response.answer) {
+        resMessage += response.answer;
+      }
 
-          let responses = [];
-
-          for (const key in infoMap) {
-            if (response.utterance.toLowerCase().includes(key)) {
-              const infoKey = infoMap[key];
-              let infoValue = getUserInfo(infoKey);
-
-              if (Array.isArray(infoValue)) {
-                infoValue = infoValue.join(", ");
-              } else if (typeof infoValue === "object") {
-                infoValue = JSON.stringify(infoValue, null, 2);
-              }
-
-              responses.push(`My ${key} is ${infoValue}.`);
-            }
-          }
-
-          if (responses.length !== 0) {
-            resMessage += responses.join("\n");
-          }
-        }
-
-        if (response.intent === "request_file") {
-          await client.sendMessage(
-            message.from,
-            response.answer + automatedMessage
-          );
-          return await sendFile(message);
+      // If no NLP response, try Gemini
+      if (!resMessage) {
+        const geminiResponse = await getGeminiResponse(reqMess, message.from);
+        if (
+          geminiResponse &&
+          geminiResponse !==
+            "I apologize, but I'm having trouble processing your request at the moment."
+        ) {
+          resMessage += geminiResponse;
         }
       }
 

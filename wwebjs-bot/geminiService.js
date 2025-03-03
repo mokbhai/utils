@@ -1,19 +1,17 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
+const chatContext = require("./chatContext");
 
 // Initialize Gemini API
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const currentDate = new Date();
-const formattedDate = currentDate.toLocaleDateString("en-US", {
-  month: "long",
-  day: "numeric",
-  year: "numeric",
-});
+
 // Context about the user
 const userContext = `
 IMPORTANT: You ARE Mokshit Jain himself. You must always speak in first-person ("I", "my", "me"). Never refer to "Mokshit" in third-person.
-CURRENT DATE: ${formattedDate} - Always use this exact date when discussing the current date/year.
+
 Answer in user request language. Also answer in a way that is most likely to be asked by a user.
+
 Answer in paragraph format and point by point, be concise and to the point.
+
 Core details about me:
 {
   "name": "Mokshit Jain",
@@ -167,16 +165,24 @@ Core details about me:
 Please provide accurate and relevant information based on these details. If asked about something not covered in this context, politely say you don't have that information.
 `;
 
-async function getGeminiResponse(userQuery) {
+async function getGeminiResponse(userQuery, userId) {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
-    const prompt = `${userContext}\n\nUser Query: ${userQuery}\n\nPlease provide a natural, conversational response based on the information provided.`;
+    // Get chat context for this user
+    const conversationContext = chatContext.formatContextForPrompt(userId);
+
+    const prompt = `${userContext}\n\n${conversationContext}User Query: ${userQuery}\n\nPlease provide a natural, conversational response based on the information provided and the conversation context.`;
 
     const result = await model.generateContent(prompt);
     const response = await result.response;
-    // console.log(response.text());
-    return response.text();
+    const responseText = response.text();
+
+    // Add both user query and bot response to context
+    chatContext.addMessage(userId, userQuery, true);
+    chatContext.addMessage(userId, responseText, false);
+
+    return responseText;
   } catch (error) {
     console.error("Error getting Gemini response:", error);
     return "I apologize, but I'm having trouble processing your request at the moment.";

@@ -37,17 +37,6 @@ async function initializeNLP() {
     "The file you requested is available."
   );
 
-  // Add personal info responses
-  manager.addDocument("en", "who are you?", "my_info");
-  manager.addDocument("en", "What is your name?", "my_info");
-  manager.addDocument("en", "Tell me your email address.", "my_info");
-  manager.addDocument("en", "What are your hobbies?", "my_info");
-  manager.addDocument("en", "What are your interests?", "my_info");
-  manager.addDocument("en", "Tell me your phone number", "my_info");
-  manager.addDocument("en", "What do you do?", "my_info");
-  manager.addDocument("en", "Where do you study?", "my_info");
-
-
   // Train the model
   await manager.train();
 

@@ -54,7 +54,6 @@ npm start
 
 2. The server will start on port 4002. You'll need to scan the QR code that appears in the terminal to authenticate your WhatsApp account.
 
-
 3. Once authenticated, you can send messages using the API endpoint:
 
 ```bash
@@ -159,4 +158,3 @@ Note: The model uses both rule-based and machine learning approaches to provide 
 - `userInfo.js` - User information management
 - `vlurgor.js` - Additional bot functionality
 - `model.nlp` - Trained NLP model data
-
