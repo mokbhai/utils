@@ -3,6 +3,9 @@
 ## Quick Setup Commands
 
 ```bash
+
+sudo dnf install firewalld
+
 # Check firewall status
 sudo firewall-cmd --state
 

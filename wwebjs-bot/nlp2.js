@@ -156,6 +156,6 @@ async function trainNLP() {
   manager.save();
 }
 
-// trainNLP();
+trainNLP();
 
 module.exports = initializeNLP;

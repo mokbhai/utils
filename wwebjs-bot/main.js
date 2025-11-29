@@ -80,6 +80,11 @@ async function main() {
         return;
       }
 
+      // Ignore file and image messages
+      if (message.hasMedia || message.type === "document") {
+        return;
+      }
+
       let resMessage = "";
       const nlp = compromise(message.body.toLowerCase());
       const reqMess = message.body.toLowerCase().replace(/\n/g, "").trim();
@@ -96,22 +101,22 @@ async function main() {
         );
       }
 
-      // First try NLP processing
-      const response = await manager.process("en", reqMess);
+      // // First try NLP processing
+      // const response = await manager.process("en", reqMess);
 
-      // Handle NLP intents first
-      if (response.intent === "request_file") {
-        await client.sendMessage(
-          message.from,
-          response.answer + automatedMessage
-        );
-        return await sendFile(message);
-      }
+      // // Handle NLP intents first
+      // if (response.intent === "request_file") {
+      //   await client.sendMessage(
+      //     message.from,
+      //     response.answer + automatedMessage
+      //   );
+      //   return await sendFile(message);
+      // }
 
-      // If NLP has an answer, use it
-      if (response.answer) {
-        resMessage += response.answer;
-      }
+      // // If NLP has an answer, use it
+      // if (response.answer) {
+      //   resMessage += response.answer;
+      // }
 
       // If no NLP response, try Gemini
       if (!resMessage) {
